@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/Assets/icons/favicon.png">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css""/>
+    <script src="/javascript/swiper-bundle.min.js" defer></script>
+    <script src="/javascript/script.js" defer></script>
     <title>AT Productions</title>
 </head>
 <body>
@@ -44,13 +47,47 @@
                     Let's build your project!
                 </a>
             </div>
+            <!-- Just superimpose your picture on the hero banner in Photoshop. easy peasy lemon squeezy -->
             <div class="hero-picture"><img src="/assets/images/samsung-memory-h7llrunUaE0-unsplash.png" alt=""></div>
         </div>
     </section>
-    <section class="projects"></section>
-    <!-- TODO:
-    figure out how to do slideshows first
-    try videos and playgrounds -->
+    <section class="projects flex">
+        <!-- After adding your final content(actual links), resize and reposition the slider buttons on revision -->
+        <div class="container swiper">
+            <div class="slide-content">
+                <div class="cardwrapper flex swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="/assets/images/slider-image-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="/assets/images/slider-image-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="/assets/images/slider-image-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="/assets/images/slider-image-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="/assets/images/slider-image-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+    </section>
+
 </body>
 </html>
 
@@ -60,4 +97,5 @@
     Once you're finished:
     1-Make it responsive! 
     2-Figure out what pictures taken with real cameras look like on websites, and what size your picture needs to be 
+    3-I will make this page as perfectly as it should look once on revision
 -->
