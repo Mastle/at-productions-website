@@ -144,7 +144,7 @@ nav{
 }
 
 .hero-picture img{
-    width: 100%;
+    width: 90%;
     margin-left: 100px;
 
 }
@@ -173,6 +173,10 @@ nav{
     font-size: 20px;
     font-weight:550;
     color: white;
+}
+
+.hero-picture{
+    padding-top: 20px;
 }
 /* utility */
 .container {
