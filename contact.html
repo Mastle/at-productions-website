@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-one.css">
+    <link rel="stylesheet" href="css/style-two.css">        
+    <link rel="stylesheet" href="css/style-three.css">    
+    <!-- Watch out for the selectors with the same class name when combining the css files -->
+    <link rel="icon" type="image/x-icon" href="/Assets/icons/favicon.png">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="/javascript/swiper-bundle.min.js" defer></script>
+    <script src="/javascript/script.js" defer></script>
+    <title>AT Productions</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <a href="/">
+            <h1 class="logo-name" ::before>AT Productions</h1>
+             </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a class="selected" href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="/">
+            <span class="phone-number" ::before>(+98)935248700</span>
+             </a>
+        </div>
+    </div>
+    <section class="contact-bg flex"></div>
+    <div class="container flex icons-wrapper">
+        <div class="icon-row-one flex">
+            <i class="fa-brands fa-instagram fa-3x"></i>
+            <i class="fa-brands fa-twitter   fa-3x"></i>
+            <i class="fa-brands fa-whatsapp  fa-3x"></i>
+            <i class="fa-brands fa-telegram  fa-3x"></i>
+            <i class="fa-brands fa-discord   fa-3x"></i>
+        </div>
+        <div class="icon-row-two flex">
+            <i class="fa-brands fa-github  fa-3x"></i>
+            <i class="fa-brands fa-linkedin  fa-3x"></i>
+
+        </div>
+        <div class="email-wrapper">
+            <i class="fa-light fa-at  fa-3x"></i>
+            <span>Amirali.tsh13@gmail.com</span>
+        </div>
+    </div>
+   </section>
+   <section class="email-form flex">
+    <div class="container grid email-form-wrapper">
+    <form class="flex form-items-wrapper" action="https://formsubmit.co/amirali.tsh13@gmail.com" id="emailfrm" method="POST">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+        <input  type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button class="btn frmbtn" type="submit">Send</button>
+   </form>
+   <textarea name="message" form="emailfrm" placeholder="Your message" required></textarea>
+   </div>
+   </section>  
+    <footer class="flex">
+        <div class="container flex">
+            <span>Ingenuity, dedication & excellence</span>
+            <div class="footer-icons-container flex">
+                <img src="/assets/icons/twitter-footer-icon.svg" alt="">
+                <img src="/assets/icons/instagram-footer-icon.svg" alt="">
+                <img src="/assets/icons/github-footer-icon.svg" alt="">
+                <img src="/assets/icons/discord-footer-icon.svg" alt="">
+            </div>
+            <div class="name-logo flex">
+            <span>AT productions</span>
+            <img class="footer-logo" src="/assets/icons/Logo-2-footer.svg" alt="">
+        </div>
+        </div>
+    </footer>
+    </body>
+</html>

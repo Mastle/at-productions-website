@@ -1,0 +1,116 @@
+.about-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+
+
+.text-wrapper{
+    flex-basis: 700px;
+    color: #333;
+    min-height: 600px;
+    text-align: center;
+}
+
+.text-wrapper h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.text-wrapper p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.contact-bg{
+    background-image: url('/assets/images/contact-page-background.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 1000px;
+    
+}
+
+.icons-wrapper{
+   flex-direction: column;
+   min-height:600px;
+   gap: 30px;
+}
+
+.icon-row-one{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.icon-row-two{
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.email-wrapper{
+    margin-top: 30px;
+}
+.email-wrapper span{
+    font-size: 30px;
+}
+
+
+
+
+
+/* email form section */
+
+.email-form{
+    background-color: var(--dark-blue);
+    min-height: 500px;
+    position: relative;
+
+}
+
+
+
+
+ .grid{
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+textarea{
+    grid-column-start: -4;
+    grid-column-end: -2;
+    min-height: 300px;
+    resize:none;
+}
+
+
+form{
+    grid-column-start: 2;
+    grid-column-end: 4;
+   
+}
+
+.form-items-wrapper{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form-items-wrapper input{
+    width: 45%;
+    height: 30px;
+
+}
+
+.frmbtn{
+    position: absolute;
+     bottom: 0px; 
+     right: 200px;
+     border-style: initial;
+     font-size: px;
+
+}
