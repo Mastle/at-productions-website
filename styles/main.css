@@ -95,7 +95,6 @@ h1, h2 {
  /* navbar */
 .navbar{
     background: var(--dark-blue);
-    color: #ffff;
     height: 90px;
 }
 
