@@ -1,122 +1,10 @@
-:root{
-    --dark-blue: #062330;
-    --light-blue-one: #02ABEE;
-    --light-blue-two:#008AC0 ;
-}
+/* navbar */
 
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-
-
-
-body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    line-height: 1.6;
-}
-
-
-
-/* utility */
-.container {
-    max-width: 1300px;
-    width: 60%;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-    position: relative;
-}
-
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--light-blue-one);
-
-}
-
-.btn-outline {
-    border: 1px #fff solid;
-}
-
-.btn:hover {
-    transform: scale(0.98);
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-
-.resize{
-    width:1300px;
-}
-
-/* end utility */
-
-ul{
-    list-style-type: none;
-}
-
-
-a{
-    text-decoration:none;
-    color: #333;
-}
-
-
-h1, h2 {
-    font-weight: 300;
-    line-height:1.2;
-    margin: 10px 0;
-}
-
-
-
-
- /* navbar */
 .navbar{
     background: var(--dark-blue);
     height: 90px;
 }
 
-.logo-name::before{
-    content:"";
-    display:block;
-    background: url('../assets/icons/Logo-1-navbar.svg') no-repeat;
-    width:40px;
-    height:44px;
-    clear:both;
-    float: left;  
-    margin: 0 6px 0 0;
-
-}
-
-
-.navbar ul{
-    display: flex;
-    justify-content:space-evenly;
-    margin: 0 40px;
-
-}
 
 
 .navbar a{
@@ -128,11 +16,32 @@ h1, h2 {
 
 
 
+.navbar .flex{
+    justify-content: space-between;
+}
+
+
+
+
+.logo-and-name::before{
+    content:"";
+    display:block;
+    background: url('../assets/icons/Logo-1-navbar.svg') no-repeat;
+    width:40px;
+    height:44px;
+    clear:both;
+    float: left;  
+    margin-bottom: 6px;
+
+}
+
+
+
 nav a{
     font-size: 17px;
 }
 
-
+/* This needs be turned into an animation */
 nav a:hover {
     border-bottom: 2px #fff solid;  
     
@@ -142,17 +51,19 @@ nav{
     flex-grow: 1;
 }
 
-.navbar a.selected{
+nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0 40px;
+
+}
+
+
+
+nav a.selected{
     color: var(--light-blue-one);
     border-bottom: 2px var(--light-blue-two) solid;
 }
-
-
-
-.navbar .flex{
-    justify-content: space-evenly;
-}
-
 
 
 .container .phone-number::before{
