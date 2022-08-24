@@ -29,7 +29,7 @@
 }
 
 .contact-bg{
-    background-image: url('/assets/images/contact-page-background.png');
+    background-image: url('../assets/images/contact-page-background.png');
     background-repeat:no-repeat;
     background-size:cover;
     min-height: 1000px;
