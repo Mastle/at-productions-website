@@ -85,7 +85,7 @@ nav a.selected{
 
 .hero{
     background-color: #1e4c6366;
-    background-image:url('/assets/images/hero-banner-image.png');
+    background-image:url('../assets/images/hero-banner-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 200px;
