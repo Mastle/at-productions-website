@@ -144,6 +144,8 @@ nav a.selected{
 .projects h1{
    padding-bottom: 10px;
    margin-bottom: 40px;
+   font-size: 40px;
+
 }
 
 .flex-column{
@@ -151,9 +153,7 @@ nav a.selected{
   gap: 20px;
 }
 
-.section-name-projects{
-    font-size: 40px;
-}
+
 
 .slide-content .flex{
     flex-direction: row;
@@ -164,29 +164,23 @@ nav a.selected{
 .slide-content{
     margin: 0 40px;
     overflow: hidden;
-    border-radius: 15px;
     padding-left: 40px;
+  }
+
+  
+  .card-image img{
+    width: 75%;
   }
   
   .swiper-navBtn{
-    color: #ffffff;
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover{
     color: var(--light-blue-two);
   }
 
-  .blog{
-    background-color: var(--dark-blue);
-    min-height: 500px;;
-}
 
-.blog h1{
-   padding-bottom: 10px;
-   margin-bottom: 40px;
-}
-
-
+/* my-skills */
 
 .my-skills{
     text-align: center;
@@ -283,6 +277,18 @@ nav a.selected{
 
 .bottom-skill-card p a{
     color: var(--light-blue-one);
+}
+
+.blog{
+    background-color: var(--dark-blue);
+    min-height: 500px;;
+}
+
+.blog h1{
+   padding-bottom: 10px;
+   margin-bottom: 40px;
+   font-size: 40px;
+
 }
 
 
