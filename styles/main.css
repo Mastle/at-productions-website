@@ -41,7 +41,7 @@ nav a{
     font-size: 17px;
 }
 
-/* This needs be turned into an animation */
+
 nav a:hover {
     border-bottom: 2px #fff solid;  
     
@@ -82,54 +82,49 @@ nav a.selected{
 
 /* hero */
 
-
 .hero{
     background-color: #1e4c6366;
-    background-image:url('../assets/images/hero-banner-image.png');
+    background-image:url('../assets/images/hero-banner-image-2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
-    /* padding-bottom: 200px; */ 
-    background-blend-mode: multiply;
-
+    min-height: 661px;
+    padding-top: 170px;
     
 }
 
-
-
-.hero h1{
-    font-size: 50px;
-}
-
-.hero p{
-    font-size: 25px;
-    margin: 20px 0;
-}
-
-.hero-picture img{
-    width: 90%;
-    margin-left: 100px;
-
+.hero .container{
+    overflow: visible;
 }
 
 .hero .grid{
-    grid-template-columns: 60% 35%;
+    grid-template-columns: 70% 40%;
     gap: 50px;
     align-items: flex-start;
 }
 
-.hero  .hero-text-wrapper{
-    margin-bottom: 50px;
+
+.hero .hero-items-wrapper{
+    position: relative;
+    padding-left: 100px;
 }
 
-.hero .container{
-   overflow:visible;
+
+.hero-items-wrapper h1{
+    font-size: 50px;
 }
-.hero .hero-text{
-    position: relative;
+
+.hero-items-wrapper p{
+    font-size: 25px;
+    margin: 20px 0 50px 0;
 }
+
+.hero .container img{
+    margin-left: 80px;
+
+}
+
+
 .hero a{
-    border: 3px #008AC0 solid;
     position: absolute;
     right: 10px;
     margin-top: 70px; 
@@ -138,9 +133,8 @@ nav a.selected{
     color: white;
 }
 
-.hero-picture{
-    padding-top: 20px;
-}
+
+/* projects */
 
 .projects{
     background-color: var(--dark-blue);
