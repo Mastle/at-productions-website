@@ -82,4 +82,34 @@ h1, h2 {
 }
 
 
+.flex-column{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  
+.slide-content .flex{
+      flex-direction: row;
+      justify-content: space-between;
+  
+  }
+  
+.slide-content{
+      margin: 0 40px;
+      overflow: hidden;
+      padding-left: 40px;
+    }
+  
+.card-image img{
+      width: 75%;
+    }
+    
+ .swiper-navBtn{
+      transition: color 0.3s ease;
+    }
+
+ .swiper-navBtn:hover{
+      color: var(--light-blue-two);
+    }
 
