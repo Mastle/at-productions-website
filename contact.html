@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/style-two.css">        
-    <link rel="stylesheet" href="styles/style-three.css">    
-    <!-- Watch out for the selectors with the same class name when combining the css files -->
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
     <link rel="stylesheet" href="css/swiper-bundle.min.css""./>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -17,7 +14,6 @@
     <title>AT Productions</title>
 </head>
 <body>
-    <!-- Overhaul the page, the contact form needs to be at top, icons need to be positioned at the bottom -->
     <div class="navbar">
         <div class="container flex">
             <a href="./">
@@ -37,16 +33,28 @@
              </a>
         </div>
     </div>
-    <section class="contact-bg flex"></div>
-    <div class="container flex icons-wrapper">
-        <div class="icon-row-one flex">
+    <div class="contact-bg flex flex-column">
+        <div class="email-form">
+            <div class="container grid">
+            <form class="flex form-items-wrapper" action="https://formsubmit.co/amirali.tsh13@gmail.com" id="emailfrm" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <input  type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button class="btn frmbtn" type="submit">Send</button>
+           </form>
+           <textarea name="message" form="emailfrm" placeholder="Your message" required></textarea>
+           </div>
+           </div>  
+    <div class="icons-wrapper">
+        <div class="icons-row-one flex">
             <i class="fa-brands fa-instagram fa-3x"></i>
             <i class="fa-brands fa-twitter   fa-3x"></i>
             <i class="fa-brands fa-whatsapp  fa-3x"></i>
             <i class="fa-brands fa-telegram  fa-3x"></i>
-            <i class="fa-brands fa-discord   fa-3x"></i>
         </div>
-        <div class="icon-row-two flex">
+        <div class="icons-row-two flex">
+            <i class="fa-brands fa-discord   fa-3x"></i>
             <i class="fa-brands fa-github  fa-3x"></i>
             <i class="fa-brands fa-linkedin  fa-3x"></i>
 
@@ -56,19 +64,7 @@
             <span>Amirali.tsh13@gmail.com</span>
         </div>
     </div>
-   </section>
-   <section class="email-form flex">
-    <div class="container grid email-form-wrapper">
-    <form class="flex form-items-wrapper" action="https://formsubmit.co/amirali.tsh13@gmail.com" id="emailfrm" method="POST">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
-        <input  type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <button class="btn frmbtn" type="submit">Send</button>
-   </form>
-   <textarea name="message" form="emailfrm" placeholder="Your message" required></textarea>
-   </div>
-   </section>  
+    </div>
     <footer class="flex">
         <div class="container flex">
             <span>Ingenuity, dedication & excellence</span>
