@@ -315,9 +315,9 @@ nav a.selected{
 /* Footer */
 
 footer{
-    justify-content: space-betwee;
     background-color: var(--dark-blue);
     min-height: 200px;
+
 }
 
 footer .container{
@@ -470,17 +470,13 @@ footer .container span{
 /* Contact page */
 
 .contact-bg{
-    background-image: url('../assets/images/contact-page-background-2.png');
+    background-image: url('../assets/images/contact-page-background.png');
     background-repeat:no-repeat;
     background-size:cover;
     min-height: 1000px;
     
 }
 
-.icons-wrapper{
-   flex-direction: column;
-   gap: 30px;
-}
 
 .icon-row-one{
     width: 60%;
@@ -493,12 +489,6 @@ footer .container span{
     margin-top: 20px;
 }
 
-.email-wrapper{
-    margin-top: 30px;
-}
-.email-wrapper span{
-    font-size: 30px;
-}
 
 
 .contact-bg .email-form{
@@ -552,23 +542,93 @@ form{
 }
 
 .frmbtn{
-    position: absolute;
-     bottom: 0px; 
-     right: 100px;
-     border-style: initial;
-     font-size: 17px;
+  position: absolute;
+  bottom: -80px; 
+  right: 243px;
+  border-style: initial;
+  font-size: 17px;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--light-blue-two);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 
 }
 
+.frmbtn:disabled{
+    cursor: default;
+}
+
+
+.button-9:focus{
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
 
 
 .contact-bg .icons-wrapper{
-    width: 30%;
-    padding-top: 20px;
+    
+    width: 80%;
+    padding: 20px 15px;
     margin-top: 20px;
+    position: relative;
+    top: 147px;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border: 1px solid rgba(255, 255, 255, 0.498);
+    border-radius: 10px;
+
 }
 
 
+.contact-bg .icons-wrapper .icons-row-one{
+    width: 35%;
+    justify-content: space-between;
+ 
+
+}
+
+
+
+.contact-bg .icons-wrapper .icons-row-two{
+    width: 30%;
+    justify-content: space-between;
+ 
+
+} 
+
+
+.bottom-email-wrapper span{
+    font-size:20px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+/* 
 .contact-bg .icons-wrapper .icons-row-one{
     justify-content: space-evenly;
  
@@ -581,11 +641,11 @@ form{
     margin-top: 40px;
  
 
-}
+} */
 
-
-.email-wrapper{
+/* 
+.bottom-email-wrapper{
     position: relative;
     left: 90px;
     top: 25px;
-}
+} */

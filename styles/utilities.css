@@ -113,3 +113,12 @@ h1, h2 {
       color: var(--light-blue-two);
     }
 
+.bottom-border{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+
+}
+
+
+.top-border{
+    border-top: 1px solid rgba(255, 255, 255, 0.227);
+}
