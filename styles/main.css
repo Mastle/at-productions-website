@@ -41,13 +41,14 @@
 
 
 nav a{
+    border-bottom: 2px solid #062330 ;
     font-size: 17px;
+    transition: border-bottom 1s;
 }
 
 
-nav a:hover {
-    border-bottom: 2px #fff solid;  
-    
+li:hover a {
+    border-bottom: 2px #fff solid; 
 }
 
 nav{
@@ -62,10 +63,10 @@ nav ul{
 }
 
 
-
 nav a.selected{
     color: var(--light-blue-one);
-    border-bottom: 2px var(--light-blue-two) solid;
+    border-bottom: 3px var(--light-blue-two) solid;
+    animation:none;
 }
 
 
@@ -105,10 +106,21 @@ nav a.selected{
     align-items: flex-start;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 .hero .hero-items-wrapper{
     position: relative;
     padding-left: 100px;
+    animation: slideInFromLeft 1.5s linear;
+
 }
 
 
@@ -121,8 +133,22 @@ nav a.selected{
     margin: 20px 0 50px 0;
 }
 
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+  
+    100% {
+      opacity:1;
+    }
+  }
+
 .hero .container img{
+
     margin-left: 80px;
+    animation: fadeIn 2s ease-in; 
+
 
 }
 
@@ -537,8 +563,6 @@ form{
     height: 30px;
     font-size: 15px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-
-
 }
 
 .frmbtn{
@@ -624,28 +648,3 @@ form{
 
 
 
-
-
-
-
-/* 
-.contact-bg .icons-wrapper .icons-row-one{
-    justify-content: space-evenly;
- 
-
-}
-
-
-.contact-bg .icons-wrapper .icons-row-two{
-    justify-content: space-evenly;
-    margin-top: 40px;
- 
-
-} */
-
-/* 
-.bottom-email-wrapper{
-    position: relative;
-    left: 90px;
-    top: 25px;
-} */
