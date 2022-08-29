@@ -28,7 +28,6 @@
 
 .logo-and-name::before{
     content:"";
-    display:block;
     background: url('../assets/icons/Logo-1-navbar.svg') no-repeat;
     width:40px;
     height:44px;
@@ -72,12 +71,11 @@ nav a.selected{
 
 .container .phone-number::before{
    content:"";
-   display:block;
    background: url('../assets/icons/icon-phone-navbar.svg') no-repeat;
    width:32px;
    height:33px;
    float: left;  
-   margin: 0 6px 0 0;
+   margin-right: 6px;
 
 
 }
@@ -622,6 +620,11 @@ form{
 
 }
 
+.contact-bg .icons-wrapper a{
+    color:#fff;
+ }
+ 
+ 
 
 .contact-bg .icons-wrapper .icons-row-one{
     width: 35%;
@@ -647,4 +650,18 @@ form{
 
 
 
+
+/* Tablets and under */
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
 
