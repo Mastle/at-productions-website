@@ -8,7 +8,10 @@
     height: 90px;
 }
 
+.navbar .container {
+    min-width: 982px;
 
+}
 
 .navbar a{
     color: #fff;
