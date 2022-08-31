@@ -8,10 +8,7 @@
     height: 90px;
 }
 
-.navbar .container {
-    min-width: 982px;
 
-}
 
 .navbar a{
     color: #fff;
@@ -37,6 +34,11 @@
     clear:both;
     float: left;  
     margin-bottom: 6px;
+
+}
+
+.logo-and-name{
+    min-width: 276px;
 
 }
 
@@ -81,6 +83,10 @@ nav a.selected{
    margin-right: 6px;
 }
 
+
+.phone-link{
+    flex-basis: 100%;
+}
 
 
 /* hero */
@@ -346,7 +352,6 @@ footer{
 }
 
 footer .container{
-    min-width: 876px;
     justify-content: space-between;
 }
 
@@ -378,6 +383,7 @@ footer .container span{
     font-size: 25px;
     text-align: center;
 }
+
 
 
 /* Projects and Blog page */
@@ -654,42 +660,70 @@ form{
 
 /* Responsive mode */
 
-@media (max-width: 1190px){
+
+@media (max-width: 1415px){
+    .container .phone-number::before{
+        position: relative;
+        left: 50px;
+        margin-bottom: 10px;
+    }
+    .hero .container img{
+        margin-left:60px; 
+        position: relative;
+        right: 100px;
+    }
+
+}
+
+
+@media (max-width: 1230px){
     .hero .container img{
         visibility: hidden;
-        height: 0;
+        height: 0; 
     }
 
     .hero .grid{
         grid-template-columns: 1fr;
     }
 
-
+    footer .container .name-logo{
+        margin-left: 10px;
+    
+    }
 
 }
 
-/*
 
-@media (max-width: 950px){
-     Add the hamburger menu 
-     
-    .navbar .container{
-     min-width: should be the same size as the navbar section   
-    }
+
+
+@media (max-width: 1124px){
+    /* make footer items vertical */
+ 
     
 }
 
-*/
+
+
+
+@media (max-width:1110px ){
+    nav{
+        display: none;
+       }
+    
+      .phone-link{
+        display: none;
+      } 
+}
 
 
 /* Tablets and under */
 
 
+@media (max-width: 762px){
 
+ 
 
-
-
-
+}
 
 
 
