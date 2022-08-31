@@ -83,6 +83,9 @@ nav a.selected{
    margin-right: 6px;
 }
 
+.hamburger-menu-icon{
+    display: none;
+}
 
 /* hero */
 
@@ -686,13 +689,14 @@ form{
     
     }
 
+
+
 }
 
 
 
 
 @media (max-width: 1124px){
-    /* make footer items vertical */
 
     footer .container{
         flex-direction: column;
@@ -703,8 +707,6 @@ form{
 
     }
  
-    
-
 
 
 
@@ -712,19 +714,119 @@ form{
     nav{
         display: none;
        }
-    
-      .phone-link{
-        display: none;
-      } 
+
 
 
       .footer-icons-container{
-     
         position: relative;
         right: 30px;
     }
 
+    .hamburger-menu-icon{
+        display: block;
+        background-color: #0c415a;
+        border-radius: 4px;
+        width: 30px;
+        height: 30px;
+        padding: 4px 0 0 8px !important;
+    }
+
+
+    
+    .hamburger-menu-icon:hover{
+       color: var(--light-blue-one);
+    }
+
+    li:hover a {
+        border-bottom: none; 
+        color: var(--light-blue-one);
+    }
+     
+    nav a{
+        transition: none;
+    }
+
+    .phone-link{
+        display: none;
+        height: 0;
+
+    }
+
+    .container .phone-number::before{
+        position: relative;
+        left: 0;
+      
+    }
+
+    nav ul li:nth-child(6){
+        width: 200px;
+        border: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .navbar .container {
+        min-width: 100%;
+        overflow: visible;
+        position:relative;
+
+    }
+
+    nav.hamburger-menu-styles{
+        position: absolute;
+        right: 0;
+        bottom: -390px;
+        background-color: var(--dark-blue);
+        height: 400px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        z-index:1;
+
+    }
+
+    nav ul{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 40px;
+        height: 100%;
+        width: 200px;
+        text-align: center;
+
+
+    }
+
+    nav ul li{
+        width: 60%;
+        height: 60%;
+        border-bottom: 0.5px solid white;
+        padding-top: 20px;
+    }
+
+    nav a.selected{
+        border-bottom: none;
+    }
+
+
+
+
+
 }
+
+@media (min-width:1110px){
+    .phone-link-menu{
+        display:none;
+    }
+
+    nav{
+        display: block;
+    }
+}
+
+
 
 
 /* Tablets and under */
@@ -738,8 +840,6 @@ form{
          right: 60px; 
     }
 
-
- 
 
 }
 

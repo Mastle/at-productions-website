@@ -7,7 +7,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css"./>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css".>
     <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <title>AT Productions</title>
@@ -18,17 +19,21 @@
             <a class="logo-and-name-link" href="./">
                <h1 class="logo-and-name" ::before>AT Productions</h1>
             </a>
-            <nav>
+            <nav class="hamburger-menu-styles" id="hamburger-menu">
                 <ul>
                     <li><a class="selected" href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a class="phone-link-menu" href="./"><span class="phone-number" ::before>(+98)9352487000</span></a></li>
                 </ul>
             </nav>
             <a class="phone-link" href="./">
               <span class="phone-number" ::before>(+98)9352487000</span>
+            </a>
+            <a href="javascript:void(0);" class="hamburger-menu-icon" onclick="showMenu()"> 
+                <i class="fa fa-bars"></i> 
             </a>
         </div>
     </div>
@@ -193,15 +198,14 @@
 
 <!--
     Responsive design:
-    1-950px breakpoint and below:
-       A)Hamburger menu 
-       C)projects and blog infinite loop slide
-       D)Picture on the about page needs to be placed on the bottom (vertical reordering)
-       E)The contact form shrinks too much, and the icons on the bottom side could use a few adjustments
+       C) Hero text needs to be centered better on mobile
+       D) projects and blog infinite loop slide
+       E) skills section needs work on smaller screens
+       F) Picture on the about page needs to be placed on the bottom (vertical reordering)
+       G) The contact form shrinks too much, and the icons on the bottom side could use a few adjustments
+       H) Make sure every single item on every page is fully responsive on all screen sizes
 
-    2-762px breakpoint and below:
-
-    3-500px breakpoint and below:
+ 
 
   -->
 
@@ -211,6 +215,8 @@
     4-Style the thank you page
     5-Write the about section
     6-Fancy loading screen with After Effects
+    !-Learn DOM manipulation and fix the phone number item on the menu
+    !-Could not fire up the resize event on other pages
     7-Add 2 projects <-- First phase of development is finished
     8-Add 2 blogs
     9-Look into SEO, engine optimization, discoverability and post production stuff

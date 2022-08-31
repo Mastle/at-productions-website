@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
     <link rel="stylesheet" href="css/swiper-bundle.min.css""./>
     <script src="./javascript/swiper-bundle.min.js" defer></script>
-    <script src="./javascript/script.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
     <title>AT Productions</title>
 </head>
 <body>
     <div class="navbar">
         <div class="container flex">
-            <a href="./">
-            <h1 class="logo-and-name" ::before>AT Productions</h1>
-             </a>
-            <nav>
+            <a class="logo-and-name-link" href="./">
+               <h1 class="logo-and-name" ::before>AT Productions</h1>
+            </a>
+            <nav class="hamburger-menu-styles" id="hamburger-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a class="selected"href="about.html">About</a></li>
+                    <li><a class="selected" href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a class="phone-link-menu" href="./"><span class="phone-number" ::before>(+98)9352487000</span></a></li>
                 </ul>
             </nav>
             <a class="phone-link" href="./">
-            <span class="phone-number" ::before>(+98)9352487000</span>
-             </a>
+              <span class="phone-number" ::before>(+98)9352487000</span>
+            </a>
+            <a href="javascript:void(0);" class="hamburger-menu-icon" onclick="showMenu()"> 
+                <i class="fa fa-bars"></i> 
+            </a>
         </div>
     </div>
     <div class="about">
@@ -60,5 +65,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        function displayWindowSize(){
+    const newWidth = document.documentElement.clientWidth
+    if ( newWidth >= 950){
+        let hamMenu = document.getElementById("hamburger-menu")
+        hamMenu.style=display ='block';
+        console.log('I am working!')
+
+    }
+}
+
+
+window.addEventListener("resize", displayWindowSize)
+
+    </script>
     </body>
 </html>

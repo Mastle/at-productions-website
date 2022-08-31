@@ -1,4 +1,4 @@
-var swiper = new Swiper(".slide-content", {
+const swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
@@ -22,3 +22,33 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+
+
+
+function displayWindowSize(){
+    const newWidth = document.documentElement.clientWidth
+    if ( newWidth >= 950){
+        let hamMenu = document.getElementById("hamburger-menu")
+        hamMenu.style=display ='block';
+        console.log('I am working!')
+
+    }
+}
+
+
+window.addEventListener("resize", displayWindowSize)
+
+
+
+function showMenu() {
+const hamMenu = document.getElementById("hamburger-menu")
+if (hamMenu.style.display === "block") {
+hamMenu.style.display = "none"
+} else {
+hamMenu.style.display = "block"
+}
+}
+
+
+
