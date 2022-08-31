@@ -698,9 +698,17 @@ form{
 
 @media (max-width: 1124px){
     /* make footer items vertical */
+
+    footer .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    
+
+    }
  
     
-}
 
 
 
@@ -713,6 +721,14 @@ form{
       .phone-link{
         display: none;
       } 
+
+
+      .footer-icons-container{
+     
+        position: relative;
+        right: 30px;
+    }
+
 }
 
 
@@ -720,6 +736,13 @@ form{
 
 
 @media (max-width: 762px){
+
+    
+    .footer-icons-container{
+
+         right: 60px; 
+    }
+
 
  
 
@@ -730,3 +753,10 @@ form{
 
 /* Mobile */
 
+@media (max-width: 500px){
+    .footer-icons-container{
+     
+        right: 100px;
+    }
+
+}
