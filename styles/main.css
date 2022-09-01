@@ -38,7 +38,7 @@
 }
 
 .logo-and-name{
-    min-width: 276px;
+    width: 276px;
 
 }
 
@@ -890,7 +890,7 @@ form{
       }
 
       .card-image img{
-        width: 90%;
+        width: 80%;
 
       }
 
@@ -903,7 +903,7 @@ form{
 
       .my-skills .skill-card{
         width: 300px;
-        padding-right: 70px;
+        padding-right: 80px;
       }
 
        .my-skills .container .skill-card:nth-child(2){
@@ -916,6 +916,11 @@ form{
         margin-bottom: 100px;
  
     } 
+
+    .bottom-skill-card{
+        padding-right: 50px;
+
+    }
 
 
     .mid-section-text p{
