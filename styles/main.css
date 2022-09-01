@@ -909,28 +909,29 @@ form{
       }
 
       .my-skills .container .skill-card:nth-child(1){
-       /* grid-row-start: -4;
-       grid-row-end: -3; */
+       grid-row-start: -4;
+       grid-row-end: -3;
  
      } 
 
 
      .my-skills .container .skill-card:nth-child(2){
         margin-top: 100px;
-        /* grid-row-start: -3;
-        grid-row-end: -2; */
+        grid-row-start: -3;
+        grid-row-end: -2;
  
      } 
 
     .my-skills .container .skill-card:nth-child(3){
         margin-top: 100px;
         margin-bottom: 100px;
-        /* grid-row-start: -2;
-        grid-row-end: -1; */
+        grid-row-start: -2;
+        grid-row-end: -1;
  
     } 
 
     .my-skills .second-container{
+        grid-template-columns: 0;
         
 
     }
