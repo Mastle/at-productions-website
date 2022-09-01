@@ -689,6 +689,7 @@ form{
 
     footer .container .name-logo{
         margin-left: 10px;
+        padding-bottom: 15px;
     
     }
 
@@ -812,9 +813,6 @@ form{
     nav a.selected{
         border-bottom: none;
     }
-
-
-
 
 
 }
