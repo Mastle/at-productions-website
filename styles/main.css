@@ -38,7 +38,7 @@
 }
 
 .logo-and-name{
-    width: 276px;
+    width: 260px;
 
 }
 
@@ -904,21 +904,36 @@ form{
       .my-skills .skill-card{
         width: 300px;
         padding-right: 80px;
+
+        
       }
 
-       .my-skills .container .skill-card:nth-child(2){
-        margin-top: 100px;
+      .my-skills .container .skill-card:nth-child(1){
+       grid-row-start: -4;
+       grid-row-end: -3;
  
-    } 
+     } 
+
+
+     .my-skills .container .skill-card:nth-child(2){
+        margin-top: 100px;
+        grid-row-start: -3;
+        grid-row-end: -2;
+ 
+     } 
 
     .my-skills .container .skill-card:nth-child(3){
         margin-top: 100px;
         margin-bottom: 100px;
+        grid-row-start: -2;
+        grid-row-end: -1;
  
     } 
 
     .bottom-skill-card{
         padding-right: 50px;
+        grid-row-start: -4;
+        grid-row-end: -1;
 
     }
 
