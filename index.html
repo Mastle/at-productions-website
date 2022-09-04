@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/swiper-bundle.min.css".>
     <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <title>AT Productions</title>
 </head>
 <body>
     <div class="navbar">
-        <div class="container flex">
+        <div class="container flex container--visible">
             <a class="logo-and-name-link" href="./">
-               <h1 class="logo-and-name" ::before>AT Productions</h1>
+               <h1 class="logo-and-name" >AT Productions</h1>
             </a>
             <nav class="hamburger-menu-styles" id="hamburger-menu">
                 <ul>
@@ -26,11 +26,11 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a class="phone-link-menu" href="./"><span class="phone-number" ::before>(+98)9352487000</span></a></li>
+                    <li><a class="phone-link-menu" href="./"><span class="phone-number" >(+98)9352487000</span></a></li>
                 </ul>
             </nav>
             <a class="phone-link" href="./">
-              <span class="phone-number" ::before>(+98)9352487000</span>
+              <span class="phone-number" >(+98)9352487000</span>
             </a>
             <a href="javascript:void(0);" class="hamburger-menu-icon" onclick="showMenu()"> 
                 <i class="fa fa-bars"></i> 
@@ -38,7 +38,7 @@
         </div>
     </div>
     <section class="hero">
-        <div class="container grid">
+        <div class="container grid container--visible">
             <div class="hero-items-wrapper">
                 <h1>I'm Amirali Taqishah</h1>
                 <p>Nothing makes me more excited than ensuring a smooth and steady development process for my clients!</p>      
@@ -51,7 +51,7 @@
     </section>
     <section class="projects flex flex-column">
         <h1>Projects</h1>
-        <div class="container swiper">
+        <div class="container swiper container--visible">
             <div class="slide-content">
                 <div class="cardwrapper flex swiper-wrapper">
                     <div class="card swiper-slide">
@@ -87,7 +87,7 @@
     </section>
     <section class="my-skills">
         <h1>My Skills</h1>
-        <div class="container grid mobile-grid">
+        <div class="container grid mobile-grid container--visible">
             <div class="skill-card">
                <img src="assets/icons/mobile-dev-icon.svg" alt="">
                <span class="skill-header">Mobile development</span>
@@ -179,7 +179,7 @@
         <p>Always one click away from answering your questions and helping you with your projects</p>
         </div>
     <footer class="flex">
-            <div class="container flex">
+            <div class="container flex container--visible">
                 <span>Ingenuity, dedication & excellence</span>
                 <div class="footer-icons-container flex">
                    <a href="https://twitter.com/ATaqishah" target="_blank"> <img src="./assets/icons/twitter-footer-icon.svg" alt=""></a>
@@ -198,12 +198,14 @@
 
 <!--
     Responsive design:
-       C) Hero text needs to be centered better on mobile
-       D) projects and blog infinite loop slide
-       E) skills section needs work on smaller screens
-       F) Picture on the about page needs to be placed on the bottom (vertical reordering)
-       G) The contact form shrinks too much, and the icons on the bottom side could use a few adjustments
-       H) Make sure every single item on every page is fully responsive on all screen sizes
+       A) Apply max-width: 100% to all images
+       B) Re-name the sections on Blog page
+       C) The first page is not responsive on all device sizes, the grid container in the my skills section needs to be re-designed
+       D) Picture on the about page needs to be placed on the bottom (vertical reordering)
+       E) The contact form shrinks too much, and the icons on the bottom side could use a few adjustments
+       F) Make sure every single item on every page is fully responsive on all screen sizes
+       !-Fix the extra phone link, take care of the javascript code at the end of every page
+
   -->
 
 <!-- 

@@ -16,15 +16,20 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.6;
+    overflow-x:hidden;
 }
 
 .container {
     max-width: 1100px;
     width: 70%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
     padding: 0 20px;
     position: relative;
+}
+
+.container--visible{
+    overflow:visible;
 }
 
 .flex{
@@ -120,3 +125,5 @@ h1, h2 {
 .top-border{
     border-top: 1px solid rgba(255, 255, 255, 0.227);
 }
+
+

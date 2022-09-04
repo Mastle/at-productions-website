@@ -87,6 +87,10 @@ nav a.selected{
     display: none;
 }
 
+
+
+
+
 /* hero */
 
 .hero{
@@ -99,9 +103,7 @@ nav a.selected{
     
 }
 
-.hero .container{
-    overflow: visible;
-}
+
 
 .hero .grid{
     grid-template-columns: 70% 40%;
@@ -148,9 +150,10 @@ nav a.selected{
   }
 
 .hero .container img{
-
+    display:block;
     margin-left: 80px;
     animation: fadeIn 2s ease-in; 
+    
 
 
 }
@@ -706,8 +709,6 @@ form{
         flex-direction: column;
         gap: 30px;
     }
-
-    
 
     }
  
