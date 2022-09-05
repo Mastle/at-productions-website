@@ -272,6 +272,7 @@ nav a.selected{
     padding: 30px 0;
 }
 
+/* This part does not even need a grid system */
 
 .bottom-skill-card{
     grid-column-start: 2;
