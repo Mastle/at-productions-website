@@ -186,11 +186,11 @@ nav a.selected{
 
 }
 
-.projects .container{
+/* .projects .container{
     display: block;
     padding-right: 36px;
 
-}
+} */
 
 
 /* my-skills section */
@@ -284,7 +284,7 @@ nav a.selected{
 
 
 .bottom-skill-card{
-    width: max(276px, 100%);
+    width: max(260px, 100%);
 }
 
 
@@ -343,12 +343,12 @@ nav a.selected{
 
 }
 
-.blog .container{
+/* .blog .container{
     display: block;
-    padding-right: 36px;
+    padding-right: 10px;
 
 
-}
+} */
 
 
 
@@ -888,7 +888,7 @@ form{
 
     .my-skills .container{
         display: block;
-        padding-right: 55px;
+        padding-right: 60px;
         
     }
 
@@ -903,7 +903,10 @@ form{
     }
 
     .slide-content{
-        margin: 0 5px;
+        margin: 0 10px;
+        width: 100%;
+        position: relative;
+        right: 30px;
       }
       
       .swiper-navBtn{
