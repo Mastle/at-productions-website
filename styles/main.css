@@ -189,8 +189,6 @@ nav a.selected{
 .my-skills{
     text-align: center;
     font-size: 20px;
-    min-height: 1400px;
-    
 }
 
 .my-skills h1{
@@ -211,7 +209,7 @@ nav a.selected{
 .my-skills .grid{
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    align-items: normal;
+    align-items: start;
 
 }
 
@@ -235,6 +233,7 @@ nav a.selected{
 
 .skill-card{
     margin: 0 20px;
+    width: max(161px,100%);
 
 }
 
@@ -280,8 +279,7 @@ nav a.selected{
 
 
 .bottom-skill-card{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    width: max(276px, 100%);
 }
 
 
@@ -871,6 +869,22 @@ form{
     .hero a{
         padding-left: 30px;
         text-align: center;
+    }
+
+    .my-skills .container{
+        display: block;
+        padding-right: 55px;
+        
+    }
+
+    .my-skills .skill-card{
+        margin-bottom: 5rem;
+    }
+
+
+
+    .my-skills .second-container{
+        padding-right: 0;
     }
 
   
