@@ -206,12 +206,15 @@ nav a.selected{
 
 }
 
+
+
 .my-skills .grid{
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     align-items: normal;
 
 }
+
 
 .my-skills .skill-section-text{
     border-bottom: 2px #008ac02d solid;
@@ -267,6 +270,7 @@ nav a.selected{
 }
 
 
+
 .my-skills .second-container{
     grid-template-columns: 1fr 4fr 1fr;
     padding: 30px 0;
@@ -274,11 +278,11 @@ nav a.selected{
 
 /* This part does not even need a grid system */
 
+
 .bottom-skill-card{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
 
 
 
@@ -308,11 +312,13 @@ nav a.selected{
     margin-bottom:20px;
 }
 
+@media (min-width: 50em){
+
 .bottom-skill-card p{
     grid-column-start: 1 ;
     grid-column-end: 4;
 }
-
+}
 
 .bottom-skill-card p a{
     color: var(--light-blue-one);
@@ -717,9 +723,10 @@ form{
 
 
 @media (max-width:1110px ){
+
     nav{
         display: none;
-       }
+    }
 
 
 
@@ -769,9 +776,6 @@ form{
         border: none;
     }
 
-    nav{
-        display: none;
-    }
 
     .navbar .container {
         min-width: 100%;
@@ -819,7 +823,7 @@ form{
 
 }
 
-@media (min-width:1110px){
+@media (min-width:1111px){
     .phone-link-menu{
         display:none;
     }
@@ -846,6 +850,7 @@ form{
 
     .hero{
         padding-top: 0;
+
     }
 
     .hero .hero-items-wrapper{
@@ -895,62 +900,23 @@ form{
 
       }
 
-      .my-skills .mobile-grid{
-        grid-template-columns: 0;
-        grid-template-rows: 1fr 2fr 2fr;
-        justify-content:flex-start;
-        
-      }
-
-      .my-skills .skill-card{
-        width: 300px;
-        padding-right: 80px;
-
-        
-      }
-
-      .my-skills .container .skill-card:nth-child(1){
-       grid-row-start: -4;
-       grid-row-end: -3;
- 
-     } 
-
-
-     .my-skills .container .skill-card:nth-child(2){
-        margin-top: 100px;
-        grid-row-start: -3;
-        grid-row-end: -2;
- 
-     } 
-
-    .my-skills .container .skill-card:nth-child(3){
-        margin-top: 100px;
-        margin-bottom: 100px;
-        grid-row-start: -2;
-        grid-row-end: -1;
- 
-    } 
-
-    .my-skills .second-container{
-        grid-template-columns: 0;
-        
-
-    }
-
-    .bottom-skill-card{
-        padding-right: 50px;
-        /* grid-row-start: -4;
-        grid-row-end: -1; */
-
-    }
-
-
     .mid-section-text p{
         font-size: 25px;
     }
-
-
-
-
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
