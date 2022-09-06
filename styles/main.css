@@ -169,22 +169,31 @@ nav a.selected{
 }
 
 
-/* projects */
+/* projects section */
 
 .projects{
     background-color: var(--dark-blue);
-    min-height: 500px;;
+    text-align: center;
+    min-height: 500px;
+    padding-top: 4rem;
 }
 
 .projects h1{
+   display: block;
    padding-bottom: 10px;
-   margin-bottom: 40px;
+   margin: 0 0 60px;
    font-size: 40px;
 
 }
 
+.projects .container{
+    display: block;
+    padding-right: 36px;
 
-/* my-skills */
+}
+
+
+/* my-skills section */
 
 .my-skills{
     text-align: center;
@@ -201,9 +210,7 @@ nav a.selected{
 
 .my-skills .container{
     color:rgb(0, 0, 0);
-
 }
-
 
 
 .my-skills .grid{
@@ -271,11 +278,9 @@ nav a.selected{
 
 
 .my-skills .second-container{
-    grid-template-columns: 1fr 4fr 1fr;
     padding: 30px 0;
 }
 
-/* This part does not even need a grid system */
 
 
 .bottom-skill-card{
@@ -322,19 +327,29 @@ nav a.selected{
     color: var(--light-blue-one);
 }
 
-/* Blog */
+/* Blog section */
 
 .blog{
     background-color: var(--dark-blue);
-    min-height: 500px;;
+    min-height: 500px;
+    text-align: center;
+    padding-top: 4rem;
 }
 
 .blog h1{
    padding-bottom: 10px;
-   margin-bottom: 40px;
+   margin-bottom: 60px;
    font-size: 40px;
 
 }
+
+.blog .container{
+    display: block;
+    padding-right: 36px;
+
+
+}
+
 
 
 .mid-section-text{
@@ -887,6 +902,19 @@ form{
         padding-right: 0;
     }
 
+    .slide-content{
+        margin: 0 5px;
+      }
+      
+      .swiper-navBtn{
+        display: none;
+      }
+
+      .card-image img{
+        width: 80%;
+
+      }
+
   
 }
 
@@ -901,18 +929,7 @@ form{
         right: 100px;
     }
 
-    .slide-content{
-        margin: 0 5px;
-      }
-      
-      .swiper-navBtn{
-        display: none;
-      }
 
-      .card-image img{
-        width: 80%;
-
-      }
 
     .mid-section-text p{
         font-size: 25px;
