@@ -31,7 +31,7 @@ function displayWindowSize(){
     if ( newWidth >= 950){
         let hamMenu = document.getElementById("hamburger-menu")
         hamMenu.style=display ='block';
-        console.log('I am working!')
+
 
     }
 }
@@ -50,5 +50,9 @@ hamMenu.style.display = "block"
 }
 }
 
+
+
+ setInterval(()=> document.getElementById('swiper-right-handle').click(), 3000)
+  console.log('this thing ran'+`${i}`)
 
 
