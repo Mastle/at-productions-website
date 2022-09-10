@@ -320,17 +320,7 @@ nav a.selected{
     margin-bottom:20px;
 }
 
-@media (min-width: 50em){
 
-.bottom-skill-card p{
-    grid-column-start: 1 ;
-    grid-column-end: 4;
-}
-}
-
-.bottom-skill-card p a{
-    color: var(--light-blue-one);
-}
 
 /* Blog section */
 
@@ -413,6 +403,7 @@ footer .container span{
 
 .project-showcase{
     padding: 40px 0;
+    max-height: 810px;
 }
 
 .project-showcase .container{
@@ -424,17 +415,15 @@ footer .container span{
     color: #333;
     margin: 35px 0;
     gap: 10px;
+   
 }
 
 
-.project-showcase .flex{
-    flex-direction: row;
-
-}
 
 .project-showcase .project-sum{
     flex-basis: 666px;
     position: relative;
+     min-width: 306px;
 }
 
 .project-showcase .project-sum h1{
@@ -448,18 +437,26 @@ footer .container span{
 }
 
 
-.project-showcase .project-sum a:nth-child(4){
-    position: absolute;
-    right: 25px;
-
+.project-button-wrapper{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 46px;
+    gap: 10px;  
+    width: max(340px, 100%);
 
 }
-
 
 
 .project-image img{
-    width: 300px; 
+    display: block;
+    width: 100%; 
 }
+
+.project-showcase-wrapper .project-image{
+      width: 35%;
+      min-width: 210px;     
+}
+
 
 .project-sum .project-btn-dark-blue{
     color: #fff;
@@ -493,6 +490,17 @@ footer .container span{
     color: var(--dark-blue);
 }
 
+
+.project-showcase .project-image{
+    margin-left: 5rem;
+}
+
+
+.dark-blue-bg .project-image{
+    margin-right: 5rem;
+
+
+}
 
 /* About page */
 
@@ -856,6 +864,38 @@ form{
       transform: translateX(0);
     }
   }
+
+
+
+
+@media (max-width: 873px){
+    .project-showcase-wrapper {
+        flex-direction: column;
+    }
+
+    .project-showcase-wrapper .project-image{
+        order: 1;
+
+    }
+    .project-showcase-wrapper .project-sum{
+        order: 2;
+    }
+    
+    .project-showcase .project-image{
+        margin-left: 0;
+    }
+    .dark-blue-bg .project-image{
+        margin-right: 0;
+    }
+
+    .project-button-wrapper{
+        padding-right: 2rem;
+    }
+
+
+
+}
+
 
 
 @media (max-width: 762px){

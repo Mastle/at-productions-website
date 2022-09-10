@@ -58,6 +58,7 @@ body {
 
 .btn-outline {
     border: 3px #008AC0 solid;
+    border-radius: 10px;
 }
 
 .btn:hover {
