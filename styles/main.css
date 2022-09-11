@@ -857,6 +857,10 @@ form{
         min-height: 1300px;
      }
 
+     .about-text-wrapper{
+        margin-left: 0;
+     }
+
      .about-text-wrapper p{
         min-width: 278px;
      }
