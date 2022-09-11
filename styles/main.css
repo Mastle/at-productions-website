@@ -551,6 +551,32 @@ footer .container span{
 }
 
 
+ .contact-bg p{
+    font-size: 30px;
+    color: var(--light-blue-one);
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    margin-inline: 1.5rem;
+
+  
+ }
+
+
+ .contact-bg .contact-page-text-one{
+    bottom: 4.5rem;
+    width: max(50%, 450px);
+    padding-left: 4rem;
+
+ }
+
+
+ .contact-bg .contact-page-text-two{
+    top: 7.5rem;
+    padding-left: 5rem;
+ }
+
+
 .icon-row-one{
     width: 60%;
     justify-content: space-between;
@@ -564,18 +590,12 @@ footer .container span{
 
 
 
-.contact-bg .email-form{
-    width: 60%;
-    min-height: 300px;
-    position: relative;
-
-}
-
 .email-form .container{
     width: 80%;
     overflow: visible;
 
 }
+
 
 
 .email-form .grid{
@@ -590,6 +610,7 @@ footer .container span{
     resize:none;
     font-size: 15px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-width: 432px;
 
 }
 
@@ -603,6 +624,7 @@ form{
 .form-items-wrapper{
     justify-content: space-between;
     align-items: flex-end;
+    min-width: 432px;
 }
 
 .form-items-wrapper input{
@@ -615,7 +637,7 @@ form{
 .frmbtn{
   position: absolute;
   bottom: -80px; 
-  right: 243px;
+  right: 273px;
   border-style: initial;
   font-size: 17px;
   backface-visibility: hidden;
@@ -647,18 +669,23 @@ form{
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
+.middle-email-wrapper{
+    display: none;
+ }
 
 .contact-bg .icons-wrapper{
     
     width: 80%;
     padding: 20px 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     top: 147px;
     justify-content: space-between;
     background-color: var(--dark-blue);
     border: 1px solid rgba(255, 255, 255, 0.498);
     border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -667,22 +694,6 @@ form{
  }
  
  
-
-.contact-bg .icons-wrapper .icons-row-one{
-    width: 35%;
-    justify-content: space-between;
- 
-
-}
-
-
-
-.contact-bg .icons-wrapper .icons-row-two{
-    width: 30%;
-    justify-content: space-between;
- 
-
-} 
 
 
 .bottom-email-wrapper span{
@@ -922,8 +933,24 @@ form{
     .project-button-wrapper{
         padding-right: 2rem;
     }
+    
+    i.bottom-email-icon{
+        display:none;
+    }
 
 
+
+    .bottom-email-wrapper span{
+        font-size: 15px;
+    }
+
+    .email-form .container{
+        padding: 0;
+        padding-right: 13rem;
+        
+    }
+
+   
 
 }
 
@@ -1010,6 +1037,43 @@ form{
         min-width: 428px;
      }
 
+     .bottom-email-wrapper{
+        display:none;
+     }
+
+     .email-form{
+        display:none;
+     }
+
+     .middle-email-wrapper{
+        display: block;
+        font-size: 25px;
+     }
+
+     .middle-email-wrapper span{
+        margin-left: 10px;
+     }
+
+     .icons-wrapper{
+        flex-direction: column;
+     }
+
+     .contact-bg{
+        min-height: 1500px;
+     }
+
+     .contact-bg .icons-wrapper{
+        max-width: 250px;
+        gap:1rem;
+     }
+
+     .middle-email-wrapper{
+        margin-bottom: 5rem;
+        padding-bottom: 4rem;
+
+     }
+
+
   
 }
 
@@ -1038,6 +1102,44 @@ form{
         font-size: 18px;
         min-width:257px;
     }
+
+
+    
+  .contact-bg .contact-page-text-one{
+    padding-right: 2rem;
+    margin-block: 10rem;
+    font-size: 20px;
+
+ }
+
+ .contact-bg .contact-page-text-two{
+    margin-inline: 1.5rem;
+    font-size: 20px;
+    padding-left: 0;
+ } 
+
+ .contact-bg .icons-wrapper{
+    margin-bottom: auto;
+ }
+
+ .middle-email-wrapper span{
+    font-size: 25px;
+
+ }
+
+ .middle-email-wrapper{
+    max-width: 200px;
+    margin-right: 6rem;
+
+ }
+
+ i.middle-email-icon{
+    display:none;
+}
+
+
+
+
 
 
     
