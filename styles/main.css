@@ -514,19 +514,27 @@ footer .container span{
 
 }
 
-.text-wrapper{
+.about-image-wrapper img{
+    width: 100%;
+    margin-block: 2rem;
+
+}
+
+.about-text-wrapper{
     flex-basis: 700px;
     color: #333;
     min-height: 600px;
     text-align: center;
+    margin-left: 2rem;
+    margin-block: 2rem;
 }
 
-.text-wrapper h1{
+.about-text-wrapper h1{
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.text-wrapper p{
+.about-text-wrapper p{
     font-size: 20px;
     line-height: 1.8;
 }
@@ -836,6 +844,23 @@ form{
         border-bottom: none;
     }
 
+    .about-section .container{
+        flex-direction: column;
+    }
+
+    .about-image-wrapper{
+        width: max(60%, 286px);
+    }
+
+     
+    .about-section{
+        min-height: 1300px;
+     }
+
+     .about-text-wrapper p{
+        min-width: 278px;
+     }
+
 
 }
 
@@ -847,6 +872,8 @@ form{
     nav{
         display: block;
     }
+
+
 }
 
 
@@ -971,6 +998,14 @@ form{
 
       }
 
+      .about-section{
+        min-height: 1500px;
+     }
+
+     .about-text-wrapper p{
+        min-width: 428px;
+     }
+
   
 }
 
@@ -985,11 +1020,22 @@ form{
         right: 100px;
     }
 
+    .about-section{
+        min-height: 1750px;
+     }
+
 
 
     .mid-section-text p{
         font-size: 25px;
     }
+
+    .about-text-wrapper p{
+        font-size: 18px;
+        min-width:257px;
+    }
+
+
     
 }
 
