@@ -760,6 +760,10 @@ form{
 
 @media (max-width:1110px ){
 
+    nav{
+        display: none;
+    }
+
 
 
       .footer-icons-container{
