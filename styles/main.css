@@ -404,7 +404,7 @@ footer .container span{
 
 .project-showcase{
     padding: 40px 0;
-    max-height: 810px;
+    max-height: 836px;
 }
 
 .project-showcase .container{
@@ -909,6 +909,20 @@ form{
     }
     .project-showcase-wrapper .project-sum{
         order: 2;
+        text-align: center;
+    }
+
+    .project-sum h1{
+        margin: 2rem 0;
+
+    }
+
+    .dark-blue-bg .project-sum h1{
+        text-align: center;
+    }
+    
+    .dark-blue-bg .project-sum p{
+        text-align: center;
     }
     
     .project-showcase .project-image{
