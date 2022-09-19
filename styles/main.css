@@ -366,6 +366,7 @@ footer{
 
 footer .container{
     justify-content: space-between;
+    padding-top: 1rem;
 }
 
 footer .footer-logo{
