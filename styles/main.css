@@ -708,7 +708,7 @@ form{
 /* Responsive mode */
 
 
-@media (max-width: 1415px){
+@media (max-width: 1392px){
     .container .phone-number::before{
         position: relative;
         left: 50px;
@@ -759,10 +759,6 @@ form{
 
 
 @media (max-width:1110px ){
-
-    nav{
-        display: none;
-    }
 
 
 
@@ -880,21 +876,7 @@ form{
 
 }
 
-@media (min-width:1111px){
-    .phone-link-menu{
-        display:none;
-    }
 
-    nav{
-        display: block;
-    }
-
-
-}
-
-
-
-/* Tablets and under */
 
 
 
@@ -909,6 +891,7 @@ form{
   }
 
 
+/* Tablets and under */
 
 
 @media (max-width: 873px){
@@ -959,7 +942,6 @@ form{
 
 @media (max-width: 762px){
 
-    /* Projects slider and my skills section needs to be redone for this screen resize (check the smallest screen size on google chrome) */
     
     .footer-icons-container{
 
@@ -1137,11 +1119,6 @@ form{
  i.middle-email-icon{
     display:none;
 }
-
-
-
-
-
 
     
 }

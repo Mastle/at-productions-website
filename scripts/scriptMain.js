@@ -1,3 +1,36 @@
+//Displaying Hamburger menu
+function showMenu() {
+    const hamMenu = document.getElementById("hamburger-menu")
+    if (hamMenu.style.display === "block") {
+    hamMenu.style.display = "none"
+    } else {
+    hamMenu.style.display = "block"
+    }
+    }
+    
+
+
+
+//Display the nav menu after resizing
+function displayWindowSize(){
+    const newWidth = document.documentElement.clientWidth
+    let hamMenu = document.getElementById("hamburger-menu")
+    if ( newWidth > 1110){
+        hamMenu.style.display ='block';
+    }
+    
+    else if ( newWidth <= 1110){
+        hamMenu.style.display = 'none';
+
+    }
+}
+
+window.addEventListener("resize", displayWindowSize)
+
+
+
+
+
 //Adding the phone link to the hamburger menu
 function displayPhoneLink(){
  const newWidth = document.documentElement.clientWidth
@@ -13,7 +46,6 @@ function displayPhoneLink(){
    let newListItem = document.createElement('li')
    newListItem.id = 'list-item-phone'
    newListItem.appendChild(phoneLink)
-   console.log(newListItem)
    let listItems = document.querySelector('ul')
    listItems.appendChild(newListItem)
                                      }
@@ -25,11 +57,6 @@ function displayPhoneLink(){
         repFlag = false;
 
         }
-    
-
-   
-   
-   
 
 }
 
@@ -38,19 +65,6 @@ window.addEventListener("resize", displayPhoneLink)
 window.addEventListener("load", displayPhoneLink)
 
 
-
-//Display the nav menu after resizing
-function displayWindowSize(){
-    const newWidth = document.documentElement.clientWidth
-    if ( newWidth >= 950){
-        let hamMenu = document.getElementById("hamburger-menu")
-        hamMenu.style.display ='block';
-
-
-    }
-}
-
-window.addEventListener("resize", displayWindowSize)
 
 
 
@@ -86,15 +100,6 @@ const swiper = new Swiper(".slide-content", {
 
 
 
-//Displaying Hamburger menu
-function showMenu() {
-const hamMenu = document.getElementById("hamburger-menu")
-if (hamMenu.style.display === "block") {
-hamMenu.style.display = "none"
-} else {
-hamMenu.style.display = "block"
-}
-}
 
 
 //Moving the slider
