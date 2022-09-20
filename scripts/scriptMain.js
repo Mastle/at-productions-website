@@ -12,7 +12,7 @@ function showMenu() {
 
 
 //Display the nav menu after resizing
-function displayWindowSize(){
+function displayNavBar(){
     const newWidth = document.documentElement.clientWidth
     let hamMenu = document.getElementById("hamburger-menu")
     if ( newWidth > 1110){
@@ -25,7 +25,7 @@ function displayWindowSize(){
     }
 }
 
-window.addEventListener("resize", displayWindowSize)
+window.addEventListener("resize", displayNavBar)
 
 
 
