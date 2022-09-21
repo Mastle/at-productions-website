@@ -566,7 +566,7 @@ footer .container span{
 
  .contact-bg .contact-page-text-one{
     bottom: 4.5rem;
-    width: max(50%, 450px);
+    width: max(50%, 350px);
     padding-left: 4rem;
 
  }
@@ -946,13 +946,6 @@ form{
         font-size: 15px;
     }
 
-    .email-form .container{
-        padding: 0;
-        padding-right: 13rem;
-        
-    }
-
-   
 
 }
 
