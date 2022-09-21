@@ -1,12 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css""./>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./javascript/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/scriptMain.js" defer></script>
+    <title>AT Productions</title>
 </head>
 <body>
-    <h1>Thanks!</h1>
+    <div class="navbar bottom-border">
+        <div class="container flex container--visible">
+            <a class="logo-and-name-link" href="./">
+               <h1 class="logo-and-name" >AT Productions</h1>
+            </a>
+            <nav class="hamburger-menu-styles" id="hamburger-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="selected" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="phone-link" href="./">
+              <span class="phone-number" >(+98)9352487000</span>
+            </a>
+            <a href="javascript:void(0);" class="hamburger-menu-icon" onclick="showMenu()"> 
+                <i class="fa fa-bars"></i> 
+            </a>
+        </div>
+    </div>
+    <div class="contact-bg thanks-page">
+    <div class="container container--visible flex flex-column thanks-page-container">
+        <p class="thank-you-msg">Thank you for sending an email! You will have my response within 24 hours</p>
+        <div class="icons-wrapper flex">
+                <a href="https://www.instagram.com/amirali_tsh/" target="_blank" ><i class="fa-brands fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com/ATaqishah" target="_blank"><i class="fa-brands fa-twitter   fa-3x"></i></a>
+                <a  href="https://wa.me/989352487000" target="_blank"><i class="fa-brands fa-whatsapp  fa-3x"></i></a>
+                <a href="https://t.me/Amiralixd" target="_blank"><i class="fa-brands fa-telegram  fa-3x"></i></a>
+                <a href="https://discordapp.com/users/204912322895020033" target="_blank"><i class="fa-brands fa-discord   fa-3x"></i></a>
+                <a href="https://github.com/Mastle" target="_blank"><i class="fa-brands fa-square-github  fa-3x"></i></a>
+                <i class="fa-brands fa-linkedin  fa-3x"></i>
+            <div class="bottom-email-wrapper">
+                <i class="fa-light fa-at  fa-3x bottom-email-icon"></i><span>Amirali.tsh13@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="flex top-border">
+        <div class="container flex container--visible">
+            <span>Ingenuity, dedication & excellence</span>
+            <div class="footer-icons-container flex">
+               <a href="https://twitter.com/ATaqishah" target="_blank"> <img src="./assets/icons/twitter-footer-icon.svg" alt=""></a>
+               <a href="https://www.instagram.com/amirali_tsh/" target="_blank" ><img src="./assets/icons/instagram-footer-icon.svg" alt=""></a>
+                <a href="https://github.com/Mastle" target="_blank"><img src="./assets/icons/github-footer-icon.svg" alt=""></a>
+                <a href="https://discordapp.com/users/204912322895020033" target="_blank"><img src="./assets/icons/discord-footer-icon.svg" alt=""></a>
+            </div>
+            <div class="name-logo flex">
+            <span>AT Productions</span>
+            <img class="footer-logo" src="./assets/icons/Logo-2-footer.svg" alt="">
+            </div>
+        </div>
+</footer>
 </body>
 </html>
-<!-- redirect to the main page at the end -->

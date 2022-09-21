@@ -703,6 +703,16 @@ form{
 }
 
 
+/* thank you page*/
+
+
+.thanks-page{
+    min-height:637px;
+}
+
+.contact-bg .thanks-page-container{
+    padding-top: 13rem;
+}
 
 
 /* Responsive mode */
