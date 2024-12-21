@@ -3,9 +3,6 @@
 
 /* navbar */
 
-body {
-    font-family: 'Exo 2'
-}
 
 .navbar{
     background: var(--dark-blue);
