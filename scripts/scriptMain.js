@@ -10,7 +10,7 @@ hamburger.addEventListener("click", () => {
 
 
 
-//Toggle Hamburger menu
+//Toggle Hamburger menu (deprecated, will delete later)
 function showMenu() {
     const hamMenu = document.getElementById("hamburger-menu")
     if (hamMenu.style.display === "block") {
