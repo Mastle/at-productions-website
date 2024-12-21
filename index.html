@@ -32,7 +32,7 @@
         <a class="logo-and-name-link" href="./">
           <h1 class="logo-and-name">AT Productions</h1>
         </a>
-        <nav class="hamburger-menu-styles" id="hamburger-menu">
+        <nav class="hamburger-menu-styles menu" id="menu">
           <ul>
             <li><a class="selected" href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -44,13 +44,19 @@
         <a class="phone-link" href="./">
           <span class="phone-number">(+98)9350000000</span>
         </a>
-        <a
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- <a
           href="javascript:void(0);"
           class="hamburger-menu-icon"
           onclick="showMenu()"
         >
           <i class="fa fa-bars"></i>
-        </a>
+        </a> -->
       </div>
     </div>
     <section class="hero">
@@ -294,10 +300,13 @@
 <!-- 
 DEADLINE: DEY 7 
 
-current step: 
- -> Adding the Exo 2 properly
+current step:
 
  - Set the current version on a different branch on git, and then remove the blog section (FOR NOW! can't compete as a legit dev without a blog)
+
+ -> The entire page needs to be re-written for an upgrade. Gotta read everything from start to finish carefully, and apply changes according to standards (use the notes below as well)
+ - the fuckin mobile menu needs a fade in animation effect
+ - Adjust your phone number position on responsive
  - replacing the hero banner image with some kinda mascot/avatar/symbolic concept (use shitty AI's for this one)
  - Need to get rid of the dumbass slider after the hero section, will pin Joyful Speaking, Capybara and Nexus Travels there, and add a glow-up (make bigger on hover) effect (got something but it might be ass?)
  - My skills section text content could probably a little adjustment, make it more similar to this: https://dbushell.com/services/

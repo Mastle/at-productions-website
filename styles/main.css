@@ -1,6 +1,5 @@
 /* Homepage */
 
-
 /* navbar */
 
 
@@ -718,55 +717,6 @@ form{
 /* Responsive mode */
 
 
-@media (max-width: 1392px){
-    .container .phone-number::before{
-        position: relative;
-        left: 50px;
-        margin-bottom: 10px;
-    }
-    .hero .container img{
-        margin-left:60px; 
-        position: relative;
-        right: 100px;
-    }
-
-}
-
-
-@media (max-width: 1230px){
-    .hero .container img{
-        visibility: hidden;
-        height: 0; 
-    }
-
-    .hero .grid{
-        grid-template-columns: 1fr;
-    }
-
-    footer .container .name-logo{
-        margin-left: 10px;
-        padding-bottom: 15px;
-    
-    }
-
-
-
-}
-
-
-
-
-@media (max-width: 1124px){
-
-    footer .container{
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    }
- 
-
-
 
 @media (max-width:1110px ){
 
@@ -780,6 +730,49 @@ form{
         position: relative;
         right: 30px;
     }
+     
+/* Test */
+
+      /* Hamburger Button Styles */
+      .hamburger {
+        width: 30px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      .hamburger span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+
+      }
+
+      /* Active State */
+      .hamburger.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+
+      .menu.active {
+        display: block;
+      }
+
+   
+  /*Test */
+
 
     .hamburger-menu-icon{
         display: block;
@@ -889,6 +882,59 @@ form{
 
 
 }
+
+
+
+
+
+@media (max-width: 1392px){
+    .container .phone-number::before{
+        position: relative;
+        left: 50px;
+        margin-bottom: 10px;
+    }
+    .hero .container img{
+        margin-left:60px; 
+        position: relative;
+        right: 100px;
+    }
+
+}
+
+
+@media (max-width: 1230px){
+    .hero .container img{
+        visibility: hidden;
+        height: 0; 
+    }
+
+    .hero .grid{
+        grid-template-columns: 1fr;
+    }
+
+    footer .container .name-logo{
+        margin-left: 10px;
+        padding-bottom: 15px;
+    
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 1124px){
+
+    footer .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    }
+ 
+
 
 
 

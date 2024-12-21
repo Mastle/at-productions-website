@@ -1,4 +1,16 @@
-//Displaying Hamburger menu
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
+});
+
+
+
+
+
+//Toggle Hamburger menu
 function showMenu() {
     const hamMenu = document.getElementById("hamburger-menu")
     if (hamMenu.style.display === "block") {
@@ -8,8 +20,6 @@ function showMenu() {
     }
     }
     
-
-
 
 //Display the nav menu after resizing
 function displayNavBar(){
@@ -31,7 +41,7 @@ window.addEventListener("resize", displayNavBar)
 
 
 
-//Adding the phone link to the hamburger menu
+//Adding the phone link to the menu
 function displayPhoneLink(){
  const newWidth = document.documentElement.clientWidth
   if ( newWidth <= 1110){
