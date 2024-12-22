@@ -83,12 +83,6 @@ nav a.selected{
    margin-right: 6px;
 }
 
-.hamburger-menu-icon{
-    display: none;
-}
-
-
-
 
 
 /* hero */
@@ -724,15 +718,11 @@ form{
         display: none;
     }
 
-
-
-      .footer-icons-container{
+    .footer-icons-container{
         position: relative;
         right: 30px;
     }
      
-/* Test */
-
       /* Hamburger Button Styles */
       .hamburger {
         width: 30px;
@@ -771,24 +761,6 @@ form{
       }
 
    
-  /*Test */
-
-
-    .hamburger-menu-icon{
-        display: block;
-        background-color: #0c415a;
-        border-radius: 4px;
-        width: 30px;
-        height: 30px;
-        padding: 4px 0 0 8px !important;
-    }
-
-
-    
-    .hamburger-menu-icon:hover{
-       color: var(--light-blue-one);
-    }
-
     li:hover a {
         border-bottom: none; 
         color: var(--light-blue-one);
@@ -823,15 +795,16 @@ form{
 
     }
 
-    nav.hamburger-menu-styles{
+    nav.responsive-menu-styles{
         position: absolute;
         right: 0;
         bottom: -390px;
         background-color: var(--dark-blue);
         height: 400px;
         padding-bottom: 10px;
-        border-radius: 5px;
+        border-radius: 7px;
         z-index:1;
+        animation: fadeIn 0.5s ease;
 
     }
 
@@ -883,16 +856,28 @@ form{
 
 }
 
-
-
+/* nav menu hover animation on responsive */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 
 @media (max-width: 1392px){
-    .container .phone-number::before{
-        position: relative;
-        left: 50px;
-        margin-bottom: 10px;
+
+    .container ul li:nth-child(5){
+        border-bottom:0;
     }
+   
+    .container ul li a span{
+     position: relative;
+     right: 22px;
+   }
+
     .hero .container img{
         margin-left:60px; 
         position: relative;

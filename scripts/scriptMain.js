@@ -1,25 +1,11 @@
+//Hamburger icon and responsive menu
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   menu.classList.toggle("active");
-});
-
-
-
-
-
-//Toggle Hamburger menu (deprecated, will delete later)
-function showMenu() {
-    const hamMenu = document.getElementById("hamburger-menu")
-    if (hamMenu.style.display === "block") {
-    hamMenu.style.display = "none"
-    } else {
-    hamMenu.style.display = "block"
-    }
-    }
-    
+});   
 
 //Display the nav menu after resizing
 function displayNavBar(){
@@ -48,7 +34,6 @@ function displayPhoneLink(){
     if(!repFlag){
    repFlag = true;
    let phoneSpan = document.createElement('span')
-   phoneSpan.className = 'phone-number'
    phoneSpan.appendChild(document.createTextNode('(+98)9352487000'))
    let phoneLink = document.createElement('a')
    phoneLink.href = './'
