@@ -7,63 +7,49 @@ hamburger.addEventListener("click", () => {
   menu.classList.toggle("active");
 });   
 
-//Display the nav menu after resizing
-function displayNavBar(){
-    const newWidth = document.documentElement.clientWidth
-    let hamMenu = document.getElementById("hamburger-menu")
-    if ( newWidth > 1110){
-        hamMenu.style.display ='block';
-    }
-    
-    else if ( newWidth <= 1110){
-        hamMenu.style.display = 'none';
-
-    }
-}
-
-window.addEventListener("resize", displayNavBar)
-
-
-
-
 
 //Adding the phone link to the menu
-function displayPhoneLink(){
- const newWidth = document.documentElement.clientWidth
-  if ( newWidth <= 1110){
-    if(!repFlag){
-   repFlag = true;
-   let phoneSpan = document.createElement('span')
-   phoneSpan.appendChild(document.createTextNode('(+98)9352487000'))
-   let phoneLink = document.createElement('a')
-   phoneLink.href = './'
-   phoneLink.appendChild(phoneSpan)
-   let newListItem = document.createElement('li')
-   newListItem.id = 'list-item-phone'
-   newListItem.appendChild(phoneLink)
-   let listItems = document.querySelector('ul')
-   listItems.appendChild(newListItem)
-                                     }
-          }
-    else
-      {
-        let listItem = document.querySelector('#list-item-phone')
-        listItem.remove()
-        repFlag = false;
 
-        }
+//see if the phone icon hasn't already been added
+//this entire god damn section is unnecessary -_______-
+// let repFlag = false;
 
-}
+// function displayPhoneLink(){
 
-var repFlag = false;
-window.addEventListener("resize", displayPhoneLink)
-window.addEventListener("load", displayPhoneLink)
+//  const newWidth = document.documentElement.clientWidth
+//   if ( newWidth <= 1110){
+//     if(!repFlag){
+//    repFlag = true;
+//    let phoneSpan = document.createElement('span')
+//    phoneSpan.appendChild(document.createTextNode('(+98)9352487000'))
+//    let phoneLink = document.createElement('a')
+//    phoneLink.href = './'
+//    phoneLink.appendChild(phoneSpan)
+//    let newListItem = document.createElement('li')
+//    newListItem.id = 'list-item-phone'
+//    newListItem.appendChild(phoneLink)
+//    let listItems = document.querySelector('ul')
+//    listItems.appendChild(newListItem)
+//                       }
+//           }
+//     else
+//       {
+//         repFlag = false;
+//         let listItem = document.querySelector('#list-item-phone')
 
+//         try { 
+//             listItem.remove()
+//          } 
+//        catch(error){    
+//          // Suppress the error
+//        }
 
+//         }
 
+// }
 
-
-
+// window.addEventListener("resize", displayPhoneLink)
+// window.addEventListener("load", displayPhoneLink)
 
 
 
@@ -92,9 +78,6 @@ const swiper = new Swiper(".slide-content", {
         },
     },
   });
-
-
-
 
 
 //Moving the slider

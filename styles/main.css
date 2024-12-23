@@ -45,9 +45,10 @@ nav a{
 }
 
 
-li:hover a {
+.container ul li:hover a {
     border-bottom: 2px #fff solid; 
 }
+
 
 
 nav{
@@ -744,31 +745,15 @@ form{
       .menu.active {
         display: block;
       }
-
    
-    li:hover a {
-        border-bottom: none; 
-        color: var(--light-blue-one);
-    }
-     
-    nav a{
-        transition: none;
-    }
-
-    .phone-link{
-        display: none;
-        height: 0;
-
-    }
 
     .container .phone-number::before{
-        position: relative;
-        left: 0;
+        content:none;
+        display: none;
       
     }
 
-    nav ul li:nth-child(6){
-        width: 200px;
+    nav ul li:nth-child(5){
         border: none;
     }
 
@@ -854,10 +839,7 @@ form{
 
 @media (max-width: 1392px){
 
-    .container ul li:nth-child(5){
-        border-bottom:0;
-    }
-   
+
     .container ul li a span{
      position: relative;
      right: 22px;
