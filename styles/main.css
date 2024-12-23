@@ -44,11 +44,13 @@ nav a{
     transition: border-bottom 1s;
 }
 
-
 .container ul li:hover a {
     border-bottom: 2px #fff solid; 
 }
 
+.container ul li:nth-child(5) a{
+    border-bottom: none;
+} 
 
 
 nav{
@@ -79,6 +81,7 @@ nav a.selected{
    float: left;  
    margin-right: 6px;
 }
+
 
 
 
@@ -756,8 +759,7 @@ form{
     nav ul li:nth-child(5){
         border: none;
     }
-
-
+     
     .navbar .container {
         min-width: 100%;
         overflow: visible;

@@ -8,49 +8,6 @@ hamburger.addEventListener("click", () => {
 });   
 
 
-//Adding the phone link to the menu
-
-//see if the phone icon hasn't already been added
-//this entire god damn section is unnecessary -_______-
-// let repFlag = false;
-
-// function displayPhoneLink(){
-
-//  const newWidth = document.documentElement.clientWidth
-//   if ( newWidth <= 1110){
-//     if(!repFlag){
-//    repFlag = true;
-//    let phoneSpan = document.createElement('span')
-//    phoneSpan.appendChild(document.createTextNode('(+98)9352487000'))
-//    let phoneLink = document.createElement('a')
-//    phoneLink.href = './'
-//    phoneLink.appendChild(phoneSpan)
-//    let newListItem = document.createElement('li')
-//    newListItem.id = 'list-item-phone'
-//    newListItem.appendChild(phoneLink)
-//    let listItems = document.querySelector('ul')
-//    listItems.appendChild(newListItem)
-//                       }
-//           }
-//     else
-//       {
-//         repFlag = false;
-//         let listItem = document.querySelector('#list-item-phone')
-
-//         try { 
-//             listItem.remove()
-//          } 
-//        catch(error){    
-//          // Suppress the error
-//        }
-
-//         }
-
-// }
-
-// window.addEventListener("resize", displayPhoneLink)
-// window.addEventListener("load", displayPhoneLink)
-
 
 
 //Slider options
