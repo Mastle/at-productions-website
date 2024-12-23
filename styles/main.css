@@ -9,7 +9,6 @@
 }
 
 
-
 .navbar a{
     color: #fff;
     padding: 10px;
@@ -18,12 +17,9 @@
 }
 
 
-
 .navbar .flex{
     justify-content: space-between;
 }
-
-
 
 
 .logo-and-name::before{
@@ -42,8 +38,6 @@
 
 }
 
-
-
 nav a{
     border-bottom: 2px solid #062330 ;
     font-size: 17px;
@@ -55,9 +49,11 @@ li:hover a {
     border-bottom: 2px #fff solid; 
 }
 
+
 nav{
     flex-grow: 1;
 }
+
 
 nav ul{
     display: flex;
@@ -96,7 +92,6 @@ nav a.selected{
     padding-top: 170px;
     
 }
-
 
 
 .hero .grid{
@@ -148,8 +143,6 @@ nav a.selected{
     margin-left: 80px;
     animation: fadeIn 2s ease-in; 
     
-
-
 }
 
 
@@ -228,8 +221,6 @@ nav a.selected{
     padding-top: 20px;
 
 }
-
-
 
 .my-skills img{
     width: 70px;
@@ -504,9 +495,6 @@ footer .container span{
     width: 80%;
     justify-content: space-between;
     padding-top: 20px;
-
-
-
 }
 
 .about-image-wrapper img{
@@ -589,7 +577,6 @@ footer .container span{
     overflow: visible;
 
 }
-
 
 
 .email-form .grid{
@@ -709,8 +696,6 @@ form{
 
 
 /* Responsive mode */
-
-
 
 @media (max-width:1110px ){
 
@@ -920,11 +905,6 @@ form{
     }
  
 
-
-
-
-
-
 @keyframes slideInFromBottom {
     0% {
       transform: translateY(100%);
@@ -989,7 +969,6 @@ form{
 
 
 }
-
 
 
 @media (max-width: 762px){
@@ -1113,8 +1092,6 @@ form{
 }
 
 
-
-
 /* Mobile */
 
 @media (max-width: 500px){
@@ -1172,20 +1149,4 @@ form{
     display:none;
 }
 
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
