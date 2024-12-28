@@ -11,7 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css" . />
     <link rel="stylesheet" href="styles/utilities.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- TODO: Delete bundle link after removing the code -->
-    <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
   </head>
@@ -70,53 +67,16 @@
     </section>
     <section class="projects">
       <h1>Projects</h1>
-      <div class="container swiper">
-        <div class="slide-content">
-          <div class="cardwrapper flex swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img
-                  src="./assets/images/slider-images/slider-image-1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img
-                  src="./assets/images/slider-images/slider-image-2.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img
-                  src="./assets/images/slider-images/slider-image-3.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img
-                  src="./assets/images/slider-images/slider-image-4.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img
-                  src="./assets/images/slider-images/slider-image-5.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+      <div class="container flex">
+        <div class="project-thumbnail">
+          <img src="./assets/images/slider-images/slider-image-1.png" alt="" />
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="project-thumbnail">
+          <img src="./assets/images/slider-images/slider-image-2.png" alt="" />
+        </div>
+        <div class="project-thumbnail">
+          <img src="./assets/images/slider-images/slider-image-3.png" alt="" />
+        </div>
       </div>
     </section>
     <section class="my-skills">
@@ -170,9 +130,7 @@
           <div>
             <span>Node.js & Express.js</span>
             <span>PHP & Laravel</span>
-            <span>MongoDB</span>
             <span>MySQL</span>
-            <span>REST API</span>
           </div>
         </div>
       </div>
@@ -237,9 +195,8 @@
 DEADLINE: DEY 7 
 
 current step:
- -> 
+ -> Add your own screenshots of your projects to the project thumbnails. Create the links and everything
  
- - Need to get rid of the dumbass slider after the hero section, will pin Joyful Speaking, Capybara and Nexus Travels there, and add a glow-up (make bigger on hover) effect (got something but it might be ass?)
  - My skills section text content could probably a little adjustment, make it more similar to this: https://dbushell.com/services/
  - Delete the bits related to linguistics and writing and translation, move them to the about me section! 
  - Delete blog slider, deactivate the blog page FOR NOW (as an independent frontend developer who can work on fullstack projects, I must have a blog series going)

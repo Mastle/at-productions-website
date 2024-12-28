@@ -150,17 +150,8 @@ nav a.selected{
 }
 
 
-.hero a{
-    position: absolute;
-    right: 10px;
-    margin-top: 70px; 
-    font-size: 20px;
-    font-weight:550;
-    color: white;
-}
-
-
 .hero-btn {
+    display: inline-flex;
     align-items: center;
     background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
     border: 0;
@@ -168,8 +159,7 @@ nav a.selected{
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     box-sizing: border-box;
     color: #ffffff;
-    display: inline-flex;
-    font-size: 18px;
+    font-size: 20px;
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
@@ -182,6 +172,7 @@ nav a.selected{
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: 550;
   }
   
   .hero-btn:active,
@@ -213,29 +204,28 @@ nav a.selected{
 .projects{
     background-color: var(--dark-blue);
     text-align: center;
-    min-height: 500px;
-    padding-top: 4rem;
+    /* min-height: 500px; */
+    padding-block: 2rem;
 }
 
 .projects h1{
    display: block;
-   padding-bottom: 10px;
-   margin: 0 0 60px;
    font-size: 40px;
+   margin-bottom:4rem;
 
 }
 
 .projects .container{
 
-    padding: 0px;
-
-} 
-
-.swiper-button-next{
-
-   right: -3px;
+    justify-content: space-between;
 
 }
+
+.project-thumbnail img{
+    border-radius:5px;
+
+  }
+
 
 /* my-skills section */
 
@@ -851,6 +841,13 @@ form{
     nav a.selected{
         border-bottom: none;
     }
+    
+    .projects .flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    
 
     .about-section .container{
         flex-direction: column;
@@ -912,7 +909,6 @@ form{
 
     .hero .grid{
         grid-template-columns: 1fr;
-        min-height: 650px;
     }
 
     footer .container .name-logo{
@@ -1032,11 +1028,6 @@ form{
 
     }
 
-    .hero a{
-        padding-left: 30px;
-        text-align: center;
-    }
-
 
     .hero .hero-items-wrapper{
         animation: slideInFromBottom 1s ease-in;
@@ -1060,18 +1051,10 @@ form{
         padding-right: 0;
     }
 
-    .slide-content{
-        margin: 0 10px;
-        width: 100%;
-        position: relative;
-        right: 30px;
-      }
-      
-      .swiper-navBtn{
-        display: none;
-      }
 
-      .card-image img{
+      
+
+      .project-thumbnail img{
         width: 80%;
 
       }
@@ -1129,7 +1112,6 @@ form{
 
 @media (max-width: 500px){
     .footer-icons-container{
-     
         right: 100px;
     }
 

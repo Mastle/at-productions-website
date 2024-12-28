@@ -108,13 +108,7 @@ h1, h2 {
       width: 75%;
     }
     
- .swiper-navBtn{
-      transition: color 0.3s ease;
-    }
 
- .swiper-navBtn:hover{
-      color: var(--light-blue-two);
-    }
 
 .bottom-border{
     border-bottom: 1px solid rgba(255, 255, 255, 0.227);
