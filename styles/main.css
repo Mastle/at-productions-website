@@ -353,8 +353,7 @@ footer .footer-logo{
 .footer-icons-container{
     width: 30%;
     justify-content: space-between;
-    margin: 0 10px 0 20px;
-    gap: 5px;
+    margin: 0 2rem;
 
 }
 
@@ -423,12 +422,6 @@ footer .container span{
     display: block;
     width: 100%; 
 }
-
-.project-showcase-wrapper .project-image{
-      width: 35%;
-      min-width: 210px;     
-}
-
 
 .project-sum .project-btn-dark-blue{
     color: #fff;
@@ -689,10 +682,6 @@ form{
         display: none;
     }
 
-    .footer-icons-container{
-        position: relative;
-        right: 30px;
-    }
      
       /* Hamburger Button Styles */
       .hamburger {
@@ -812,6 +801,11 @@ form{
 
      .about-text-wrapper p{
         min-width: 278px;
+     }
+
+
+     .footer-icons-container {
+        width: 100%
      }
 
 
@@ -946,12 +940,6 @@ form{
 
 @media (max-width: 762px){
 
-    
-    .footer-icons-container{
-
-         right: 60px; 
-    }
-
     .hero{
         padding-top: 0;
 
@@ -1055,9 +1043,7 @@ form{
 /* Mobile */
 
 @media (max-width: 500px){
-    .footer-icons-container{
-        right: 100px;
-    }
+
 
     .about-section{
         min-height: 1750px;
