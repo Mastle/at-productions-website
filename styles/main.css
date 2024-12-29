@@ -457,7 +457,9 @@ footer .container span{
 
 
 .project-showcase .project-image{
+    overflow:hidden;
     margin-left: 5rem;
+    border-radius: 10px;
 }
 
 
