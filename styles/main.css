@@ -779,6 +779,12 @@ form{
     nav a.selected{
         border-bottom: none;
     }
+
+
+    .hero-items-wrapper {
+        text-align: center;
+    }
+    
     
     .projects .flex {
         flex-direction: column;
