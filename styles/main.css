@@ -471,6 +471,10 @@ footer .container span{
 
 /* About page */
 
+
+.about-section .container{
+    flex-direction: column;
+}
 .about .container{
     max-width: 1500px;
     width: 80%;
@@ -487,10 +491,8 @@ footer .container span{
 .about-text-wrapper{
     flex-basis: 700px;
     color: #333;
-    min-height: 600px;
     text-align: center;
-    margin-left: 2rem;
-    margin-block: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-text-wrapper h1{
@@ -499,6 +501,7 @@ footer .container span{
 }
 
 .about-text-wrapper p{
+    margin-bottom: 1.5rem;
     font-size: 20px;
     line-height: 1.8;
 }
@@ -782,11 +785,6 @@ form{
         gap: 40px;
     }
 
-    
-
-    .about-section .container{
-        flex-direction: column;
-    }
 
     .about-image-wrapper{
         width: max(60%, 286px);
@@ -799,10 +797,6 @@ form{
 
      .about-text-wrapper{
         margin-left: 0;
-     }
-
-     .about-text-wrapper p{
-        min-width: 278px;
      }
 
 
