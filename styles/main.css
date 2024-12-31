@@ -82,6 +82,9 @@ nav a.selected{
    margin-right: 6px;
 }
 
+.navbar-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
 
 
 
@@ -369,6 +372,11 @@ footer .container span{
 }
 
 
+.footer-border {
+    border-top: 1px solid rgba(255, 255, 255, 0.205);
+}
+
+
 
 /* Projects and Blog page */
 
@@ -541,130 +549,6 @@ footer .container span{
     top: 7.5rem;
     padding-left: 5rem;
  }
-
-
-.icon-row-one{
-    width: 60%;
-    justify-content: space-between;
-}
-
-.icon-row-two{
-    width: 20%;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-
-
-.email-form .container{
-    width: 80%;
-    overflow: visible;
-
-}
-
-
-.email-form .grid{
-    grid-template-columns: repeat(4,1fr);
-
-}
-
-.email-form textarea{
-    grid-column-start: -4;
-    grid-column-end: -2;
-    min-height: 300px;
-    resize:none;
-    font-size: 15px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    min-width: 432px;
-
-}
-
-
-form{
-    grid-column-start: 2;
-    grid-column-end: 4;
-   
-}
-
-.form-items-wrapper{
-    justify-content: space-between;
-    align-items: flex-end;
-    min-width: 432px;
-}
-
-.form-items-wrapper input{
-    width: 45%;
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
-.frmbtn{
-  position: absolute;
-  bottom: -80px; 
-  right: 273px;
-  border-style: initial;
-  font-size: 17px;
-  backface-visibility: hidden;
-  background-color: var(--light-blue-two);
-  border-radius: 6px;
-  border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  height: 44px;
-  line-height: 1.15;
-  margin: 12px 0 0;
-  outline: none;
-  padding: 0 25px;
-  transform: translateZ(0);
-  transition: all .2s,box-shadow .08s ease-in;
-  touch-action: manipulation;
-
-}
-
-.frmbtn:disabled{
-    cursor: default;
-}
-
-
-.button-9:focus{
-    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
-}
-
-.middle-email-wrapper{
-    display: none;
- }
-
-.contact-bg .icons-wrapper{
-    
-    width: 80%;
-    padding: 20px 15px;
-    margin-top: 10px;
-    position: relative;
-    top: 147px;
-    justify-content: space-between;
-    background-color: var(--dark-blue);
-    border: 1px solid rgba(255, 255, 255, 0.498);
-    border-radius: 10px;
-    gap: 10px;
-    margin-bottom: 5px;
-
-}
-
-.contact-bg .icons-wrapper a{
-    color:#fff;
- }
- 
- 
-
-
-.bottom-email-wrapper span{
-    font-size:20px;
-    margin-left: 5px;
-}
 
 
 /* thank you page*/
