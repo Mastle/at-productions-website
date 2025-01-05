@@ -207,7 +207,7 @@ nav a.selected{
 .projects{
     background-color: var(--dark-blue);
     text-align: center;
-    padding-block: 4rem;
+    padding-block: 1.5rem;
 }
 
 .projects h1{
@@ -225,16 +225,17 @@ nav a.selected{
 
 .project-thumbnail img{
     border-radius:5px;
-
+    width: 307px; /* Fixed width */
+    height: 203.3; /* Fixed height */
+    object-fit:cover;
   }
-
 
 /* my-skills section */
 
 .my-skills{
     text-align: center;
     font-size: 20px;
-    padding-top: 4rem;
+    padding-block: 1.5rem;
 }
 
 .my-skills h1{
@@ -254,7 +255,7 @@ nav a.selected{
 .my-skills .grid{
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
-    align-items: start;
+    align-items: baseline;
 
 }
 
@@ -289,7 +290,10 @@ nav a.selected{
 
 .skill-card .skill-description{
     margin-bottom: 20px;
-   
+    color:var(--dark-blue);
+    margin-top:20px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .skill-card .skill-highlighted-text{
@@ -304,12 +308,6 @@ nav a.selected{
   
 }
 
-.my-skills p{
-    color:var(--dark-blue);
-    margin-top:20px;
-    font-size: 22px;
-    
-}
 
 .mid-section-text{
     background: linear-gradient(144deg, rgba(175, 64, 255, 0.2), rgba(90, 66, 243, 0.2) 50%, rgba(0, 221, 235, 0.2));
@@ -665,9 +663,14 @@ footer .container span{
     }
 
 
-    .hero-items-wrapper {
+    .hero-items-wrapper h1 {
         text-align: center;
     }
+
+    .hero-items-wrapper p{
+        text-align: left;
+    }
+    
     
     
     .projects .flex {
