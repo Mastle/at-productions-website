@@ -704,6 +704,10 @@ footer .container span{
         width: 100%
      }
 
+     footer .container {
+        width: 80%;
+     }
+
 
 }
 
@@ -811,14 +815,6 @@ footer .container span{
 
     }
 
-    .dark-blue-bg .project-sum h1{
-        text-align: center;
-    }
-    
-    .dark-blue-bg .project-sum p{
-        text-align: center;
-    }
-    
     .project-showcase .project-image{
         margin-left: 0;
     }
