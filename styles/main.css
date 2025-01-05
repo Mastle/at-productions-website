@@ -95,7 +95,7 @@ nav a.selected{
     background-image:url('../assets/images/hero-banner-image-2.png');
     background-repeat: no-repeat;
     background-size: cover;
-
+  
     
 }
 
@@ -127,6 +127,9 @@ nav a.selected{
 
 .hero-items-wrapper h1{
     font-size: 50px;
+    gap:16px;
+    justify-content: flex-start;
+
 }
 
 .hero-items-wrapper p{
@@ -227,7 +230,7 @@ nav a.selected{
     border-radius:5px;
     width: 307px; /* Fixed width */
     height: 203.3; /* Fixed height */
-    object-fit:cover;
+    object-fit: contain;
   }
 
 /* my-skills section */
@@ -846,6 +849,7 @@ footer .container span{
 
     .hero-items-wrapper h1{
         font-size: 45px;
+        flex-direction: column;
     }
 
     .hero-items-wrapper p{
