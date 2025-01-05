@@ -675,6 +675,10 @@ footer .container span{
         gap: 40px;
     }
 
+    .project-thumbnail img {
+        border-radius: 16px;
+      }
+
 
     .about-image-wrapper{
         width: max(60%, 286px);
@@ -869,13 +873,6 @@ footer .container span{
         padding-right: 0;
     }
 
-
-      
-
-      .project-thumbnail img{
-        width: 80%;
-
-      }
 
       .about-section{
         min-height: 1500px;
