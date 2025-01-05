@@ -790,10 +790,20 @@ footer .container span{
     .project-showcase-wrapper .project-image{
         order: 1;
 
+
+
     }
     .project-showcase-wrapper .project-sum{
         order: 2;
-        text-align: center;
+    }
+
+    .project-showcase-wrapper .project-sum  h1{
+    text-align: center;
+}
+
+
+    .project-showcase-wrapper .project-sum p{
+        text-align: left;
     }
 
     .project-sum h1{
