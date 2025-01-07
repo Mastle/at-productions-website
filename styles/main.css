@@ -1082,7 +1082,15 @@ textarea {
        }
 
        .box {
-        width: 93%;
+        width: 90%;
+       }
+
+       .contact-wrapper p, .contact-wrapper p:nth-of-type(2),.contact-mid-section-text  {
+        font-size: 1.2rem;
+       }
+
+       .contact-wrapper p a{
+        font-size: 1.3rem;
        }
 
 
