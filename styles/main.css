@@ -517,45 +517,52 @@ text-align: left;
 
 .about-text-wrapper p{
     margin-bottom: 1.5rem;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
 
 /* Contact page */
 
-.contact-bg{
+.contact-page-bg{
     background-image: url('../assets/images/contact-page-background.png');
     background-repeat:no-repeat;
     background-size:cover;
+    
+}
+
+.contact-wrapper{
+    padding: 2rem;
+}
+
+.contact-wrapper p{
+    font-size: 1.5rem;
+}
+
+.contact-wrapper p a{
+    display:block;
+    margin-top:1.2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.contact-wrapper p a:hover{
+    color: var(--light-blue-one);
+}
+
+.contact-header{
+    font-weight:600;
+    
+}
+
+.contact-bg{
     min-height: 1000px;
     
 }
 
 
- .contact-bg p{
-    font-size: 30px;
-    color: var(--light-blue-one);
-    font-weight: 500;
-    position: relative;
-    margin-inline: 1.5rem;
-
-  
- }
-
-
- .contact-bg .contact-page-text-one{
-    bottom: 4.5rem;
-    width: max(50%, 350px);
-    padding-left: 4rem;
-
- }
-
-
- .contact-bg .contact-page-text-two{
-    top: 7.5rem;
-    padding-left: 5rem;
- }
 
 
 /* thank you page*/
