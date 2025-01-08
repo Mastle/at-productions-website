@@ -708,6 +708,8 @@ textarea {
 
 .thank-you-pg-bg{
   background-image:url('../assets/images/thank-you-page-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .thank-you-container{
@@ -718,6 +720,7 @@ textarea {
 }
 .thank-you-container h2{
     text-align: center;
+    font-style:italic;
     font-weight: 600;
     line-height:1.6;
     
@@ -731,7 +734,7 @@ textarea {
 
 /* Responsive mode */
 
-@media (max-width:1110px ){
+@media screen and (max-width:1110px ){
 
     nav{
         display: none;
@@ -782,7 +785,7 @@ textarea {
       
     }
 
-    nav ul li:nth-child(5){
+    nav ul li:nth-child(6){
         border: none;
     }
      

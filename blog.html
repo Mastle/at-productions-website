@@ -19,8 +19,44 @@
     />
     <script src="./scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
+    <style>
+      .blog-container {
+        color: black;
+      }
+
+      .blog-container h1 {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 2.7rem;
+      }
+
+      .blog-container .article-snippet {
+        margin-left: 1rem;
+        margin-top: 5rem;
+      }
+
+      .blog-container .article-snippet:nth-of-type(3) {
+        padding-bottom: 6rem;
+      }
+
+      .blog-container .article-snippet h2 {
+        font-weight: 600;
+      }
+
+      .blog-container .article-snippet::after {
+        /* code for the line break goes here */
+      }
+
+      @media screen and (max-width: 762px) {
+        .blog-container {
+          margin-left: 0;
+          width: 90%;
+        }
+      }
+    </style>
   </head>
-  <body class="contact-page-bg">
+  <body>
     <div class="navbar navbar-border">
       <div class="container flex container--visible">
         <a class="logo-and-name-link" href="./">
@@ -30,9 +66,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a class="selected" href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class="selected" href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li>
               <a href="tel:+989352487000"
                 ><span class="phone-number">(+98)9352487000</span></a
@@ -47,68 +83,42 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="contact-wrapper">
-        <h1 class="contact-header">Let's chat!</h1>
-        <p>Ready to take your website to the next level?</p>
+    <div class="container blog-container">
+      <h1>My Blogs</h1>
+      <article class="article-snippet">
+        <h2 class="article-snippet-title">Sample blog post title</h2>
+        <time datetime="2025-8-1">Jan 8, 2025</time>
         <p>
-          I'm available at
-          <a href="mailto:amirali.tsh13@gmail.com">amirali.tsh13@gmail.com</a>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          ullam reprehenderit. Obcaecati reprehenderit, enim et laboriosam
+          laborum quos consequuntur quis beatae facere, aperiam perferendis sed.
+          Voluptates voluptatum voluptas maiores saepe? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Doloremque, ullam reprehenderit.
+          Obcaecati reprehenderit, enim et laboriosam laborum quos consequuntur
+          quis beatae facere, aperiam perferendis sed. Voluptates voluptatum
+          voluptas maiores saepe?
         </p>
-      </div>
-      <div class="box">
+      </article>
+      <article class="article-snippet">
+        <h2 class="article-snippet-title">Sample blog post title</h2>
+        <time datetime="2025-8-1">Jan 8, 2025</time>
         <p>
-          You can also follow me on
-          <a href="https://bsky.app/profile/taqidev.bsky.social">Bluesky</a> or
-          <a href="https://www.instagram.com/amirali_tsh/">Instagram</a> for a chat
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          ullam reprehenderit. Obcaecati reprehenderit, enim et laboriosam
+          laborum quos consequuntur quis beatae facere, aperiam perferendis sed.
+          Voluptates voluptatum voluptas maiores saepe?
         </p>
-      </div>
-      <p class="contact-mid-section-text">or use the form below</p>
-    </div>
-    <div class="container">
-    <div class="form-container">
-      <form action="https://formsubmit.co/amirali.tsh13@gmail.com" id="emailfrm"  method="POST">
-        <input type="hidden" name="_next" value="https://mastle.github.io/at-productions-website/thanks.html">
-        <input  type="hidden" name="_captcha" value="false">
-        <ul class="form">
-         <li>
-          <label for="name">Name</label>
-          <input
-          class="field"
-            type="text"
-            name="name"
-            required
-            placeholder="Your name"
-          />
-         </li>
-         <li>
-          <label for="email">Email</label>
-          <input
-          class="field"
-            type="email"
-            name="email"
-            required
-            placeholder="Your email"
-          />
-         </li>
-         <li>
-          <label for="message">message</label>
-             <textarea
-            class="field"
-            name="message"
-            form="emailfrm"
-            required
-            placeholder="tell me about your project..."
-            rows="7"
-              ></textarea>
-         </li>
-          <li>
-            <button class="contact-button" type="submit"><span>Send</span></button>
-            </li>
-          </ul>
-         </form>
-       </div>
-      </div>
+      </article>
+      <article class="article-snippet">
+        <h2 class="article-snippet-title">Sample blog post title</h2>
+        <time datetime="2025-8-1">Jan 8, 2025</time>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+          ullam reprehenderit. Obcaecati reprehenderit, enim et laboriosam
+          laborum quos consequuntur quis beatae facere, aperiam perferendis sed.
+          Voluptates voluptatum voluptas maiores saepe?
+        </p>
+      </article>
     </div>
     <footer class="flex footer-border">
       <div class="container flex container--visible">
@@ -146,8 +156,4 @@
   </body>
 </html>
 
-<!-- 
-current step:
- 
- -> contact page finished, small adjustment on responsive hook up the email server 
-  -->
+<!-- current step: blog design added, time to include the javascript -->
