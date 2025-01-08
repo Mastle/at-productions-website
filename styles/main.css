@@ -6,6 +6,7 @@
 .navbar{
     background: var(--dark-blue);
     height: 90px;
+    border-bottom: 1px solid #ffffff5d;
 }
 
 
@@ -211,6 +212,7 @@ nav a.selected{
     background-color: var(--dark-blue);
     text-align: center;
     padding-block: 3.5rem;
+    border-top: 1px solid #ffffff1c;
 }
 
 .projects h1{
