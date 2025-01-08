@@ -706,9 +706,22 @@ textarea {
 
 /* thank you page*/
 
+.thank-you-pg-bg{
+  background-image:url('../assets/images/thank-you-page-bg.png');
+}
 
-.thanks-page{
-    min-height:800px;
+.thank-you-container{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thank-you-container h2{
+    text-align: center;
+    font-weight: 600;
+    line-height:1.6;
+    
+    
 }
 
 .contact-bg .thanks-page-container{
@@ -857,6 +870,10 @@ textarea {
      footer .container {
         width: 80%;
      }
+
+     .thank-you-container h2{
+       font-size: 1.3rem;
+    }
 
 
 }
