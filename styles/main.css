@@ -210,7 +210,7 @@ nav a.selected{
 .projects{
     background-color: var(--dark-blue);
     text-align: center;
-    padding-block: 1.5rem;
+    padding-block: 3.5rem;
 }
 
 .projects h1{
