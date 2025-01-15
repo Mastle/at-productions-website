@@ -20,38 +20,73 @@
     <script src="./scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
     <style>
-      .blog-container {
+      .blog-list-container,
+      .blog-post-container {
         color: black;
       }
 
-      .blog-container h1 {
-        margin-left: 1rem;
-        margin-top: 2rem;
-        font-weight: 600;
-        font-size: 2.7rem;
+      .blog-list-container {
+        width: 55%;
       }
 
-      .blog-container .article-snippet {
-        margin-left: 1rem;
+      .blog-list-container h1 {
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 2.9rem;
+      }
+
+      .blog-list-container .article-snippet {
         margin-top: 5rem;
       }
 
-      .blog-container .article-snippet:nth-of-type(3) {
+      .blog-list-container .article-snippet:nth-of-type(3) {
         padding-bottom: 6rem;
       }
 
-      .blog-container .article-snippet h2 {
+      .blog-list-container .article-snippet h2 {
+        font-size: 2.5rem;
         font-weight: 600;
       }
 
-      .blog-container .article-snippet::after {
-        /* code for the line break goes here */
+      .blog-list-container .article-snippet time {
+        color: #888d93;
+      }
+
+      .blog-list-container .article-snippet p {
+        font-size: 1.25rem;
+        margin-block: 0.5rem;
+      }
+
+      .blog-list-container .article-snippet a {
+        color: var(--light-blue-two);
+        font-size: 1.4rem;
+      }
+
+      .blog-list-container .article-snippet a:hover {
+        text-decoration: underline;
+      }
+
+      .blog-list-container .article-snippet:not(:last-child)::after {
+        border-bottom: 1px solid #d4d4d4;
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        margin: 2rem 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      .blog-post-container {
+        width: 67%;
       }
 
       @media screen and (max-width: 762px) {
-        .blog-container {
-          margin-left: 0;
-          width: 90%;
+        .blog-list-container {
+          margin-left: 1rem;
+          width: 96%;
         }
       }
     </style>
@@ -83,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div class="container blog-container">
+    <div class="container blog-list-container" style="display: block">
       <h1>My Blogs</h1>
       <article class="article-snippet">
         <h2 class="article-snippet-title">Sample blog post title</h2>
@@ -98,6 +133,7 @@
           quis beatae facere, aperiam perferendis sed. Voluptates voluptatum
           voluptas maiores saepe?
         </p>
+        <a href="">Read more</a>
       </article>
       <article class="article-snippet">
         <h2 class="article-snippet-title">Sample blog post title</h2>
@@ -108,6 +144,7 @@
           laborum quos consequuntur quis beatae facere, aperiam perferendis sed.
           Voluptates voluptatum voluptas maiores saepe?
         </p>
+        <a href="">Read more</a>
       </article>
       <article class="article-snippet">
         <h2 class="article-snippet-title">Sample blog post title</h2>
@@ -118,7 +155,15 @@
           laborum quos consequuntur quis beatae facere, aperiam perferendis sed.
           Voluptates voluptatum voluptas maiores saepe?
         </p>
+        <a href="">Read more</a>
       </article>
+    </div>
+    <div class="container blog-post-container">
+      <div id="blog-post" style="display: none">
+        <h1 id="post-title">Sample title</h1>
+        <p id="post-content"></p>
+        <button onclick="showBlogList()">Back to Blog List</button>
+      </div>
     </div>
     <footer class="flex footer-border">
       <div class="container flex container--visible">
@@ -153,6 +198,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      // blog post fetch from local json file practice
+      fetch("data/blogPosts.json").then((e) =>
+        e.json().then((d) => console.log(d))
+      );
+    </script>
   </body>
 </html>
 
