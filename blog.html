@@ -17,11 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="./scripts/scriptMain.js" defer></script>
+    <script defer src="./scripts/scriptMain.js"></script>
     <title>AT Productions</title>
     <style>
-      .blog-list-container,
-      .blog-post-container {
+      .blog-list-container{
         color: black;
       }
 
@@ -79,10 +78,6 @@
         width: 100%;
       }
 
-      .blog-post-container {
-        width: 67%;
-      }
-
       @media screen and (max-width: 762px) {
         .blog-list-container {
           margin-left: 1rem;
@@ -90,6 +85,7 @@
         }
       }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
     <div class="navbar navbar-border">
@@ -158,12 +154,6 @@
         <a href="">Read more</a>
       </article>
     </div>
-    <div class="container blog-post-container">
-      <div id="blog-post" style="display: none">
-        <h1 id="post-title">Sample title</h1>
-        <p id="post-content"></p>
-        <button onclick="showBlogList()">Back to Blog List</button>
-      </div>
     </div>
     <footer class="flex footer-border">
       <div class="container flex container--visible">
@@ -199,10 +189,12 @@
       </div>
     </footer>
     <script>
-      // blog post fetch from local json file practice
-      fetch("data/blogPosts.json").then((e) =>
-        e.json().then((d) => console.log(d))
-      );
+
+      // fetch("data/blogPosts.md").then((e) =>
+      //   e.text().then((d) => {
+      //     blogContentGrab.innerHTML = marked.parse(d);
+      //   })
+      // );
     </script>
   </body>
 </html>
