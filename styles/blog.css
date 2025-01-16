@@ -1,0 +1,155 @@
+
+/* blog page */
+
+.blog-list-container{
+    color: black;
+  }
+
+  .blog-list-container {
+    width: 55%;
+  }
+
+  .blog-list-container h1 {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 2.9rem;
+  }
+
+  .blog-list-container .article-snippet {
+    margin-top: 5rem;
+  }
+
+  .blog-list-container .article-snippet:nth-of-type(3) {
+    padding-bottom: 6rem;
+  }
+
+  .blog-list-container .article-snippet h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .blog-list-container .article-snippet time {
+    color: #888d93;
+  }
+
+  .blog-list-container .article-snippet p {
+    font-size: 1.25rem;
+    margin-block: 0.5rem;
+  }
+
+  .blog-list-container .article-snippet a {
+    color: var(--light-blue-two);
+    font-size: 1.4rem;
+  }
+
+  .blog-list-container .article-snippet a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-list-container .article-snippet:not(:last-child)::after {
+    border-bottom: 1px solid #d4d4d4;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 2rem 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 762px) {
+    .blog-list-container {
+      margin-left: 1rem;
+      width: 96%;
+    }
+
+    .blog-list-container .article-snippet h2 {
+    
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .blog-list-container .article-snippet p {
+    font-size: 1rem;
+  }
+
+  .blog-list-container .article-snippet a{
+    font-size: 1.2rem;
+  }
+
+  }
+
+
+/* blog post */
+  .blog-post-container {
+    color: black;
+    font-size: 1.25rem;
+
+  }
+  .blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  article {
+    flex: 1;
+    margin-top: 4rem;
+  }
+
+  article h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+
+  article main p:nth-child(3) {
+    margin-top: 2.5rem;
+  }
+
+  article main p {
+    margin-top: 1rem;
+  }
+
+  article h2 {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+
+  article ol, article ul {
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+  }
+  article ul{
+    list-style: disc;
+  }
+
+  article main p:last-child{
+    margin-bottom: 10rem;
+  }
+
+  @media screen and (max-width: 762px) {
+    article h1 {
+      font-size: 2rem;
+    }
+
+    article h2 {
+      font-size: 1.3rem;
+    }
+
+    article main p, article ol, article ul {
+      font-size: 1rem;
+    }
+
+    .blog-post-container {
+      width: 92%
+    }
+
+  }
+
+
+
