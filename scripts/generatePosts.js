@@ -4,8 +4,8 @@ import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 import { marked } from 'marked';
 
-const markdownFilePath = join(process.cwd(), 'data/second-blog-post.md');
-const outputFilePath = join(process.cwd(), 'blog/second-blog-post/index.html');
+const markdownFilePath = join(process.cwd(), 'data/sample-blog-post.md');
+const outputFilePath = join(process.cwd(), 'blog/sample-blog-post/index.html');
 
 async function generatePost() {
   try {
@@ -32,6 +32,7 @@ async function generatePost() {
     />
     <link rel="stylesheet" href="../../styles/utilities.css" />
     <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/blog.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,38 +41,6 @@ async function generatePost() {
     />
     <script src="../../scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
-    <style>
-      .blog-post-container {
-        color: black;
-      }
-      .blog-wrapper {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      article {
-        flex: 1;
-        margin-top: 4rem;
-      }
-
-      article h1 {
-        
-        font-size: 2.8rem;
-        font-weight: 600;
-      }
-
-
-      article main p:nth-child(3) {
-        margin-top: 2.5rem;
-      }
-
-      article main p {
-        margin-top: 1rem;
-        font-size: 1.25rem;
-      }
-    </style>
-    </style>
   </head>
   <body>
     <div class="blog-wrapper">
@@ -82,7 +51,7 @@ async function generatePost() {
           </a>
           <nav class="responsive-menu-styles menu" id="menu">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../projects.html">Projects</a></li>
               <li><a class="selected" href="../../blog.html">Blog</a></li>
               <li><a href="../../about.html">About</a></li>
@@ -103,7 +72,7 @@ async function generatePost() {
       </div>
       <article>
         <main class="container blog-post-container">
-           ${htmlContent}
+            ${htmlContent}
         </main>
       </article>
       <footer class="flex">
@@ -142,6 +111,7 @@ async function generatePost() {
     </div>
   </body>
 </html>
+
 
 `;
     await writeFile(outputFilePath, htmlTemplate);
