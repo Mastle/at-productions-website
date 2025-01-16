@@ -137,14 +137,6 @@
       font-size: 2rem;
     }
 
-    article h2 {
-      font-size: 1.3rem;
-    }
-
-    article main p, article ol, article ul {
-      font-size: 1rem;
-    }
-
     .blog-post-container {
       width: 92%
     }
