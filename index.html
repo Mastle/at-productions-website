@@ -21,6 +21,48 @@
     />
     <script src="./scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
+    <style>
+      .latest-post {
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .latest-post .post-card {
+        max-width: 700px;
+        margin: 30px auto 0;
+        padding: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        background-color: #142b34; /* A slightly lighter dark shade */
+        text-align: left;
+      }
+
+      .latest-post .post-date {
+        font-size: 0.9rem;
+        color: #ccc;
+        margin-bottom: 0.5rem;
+      }
+
+      .latest-post h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      .latest-post .read-more-btn {
+        /* Style this like your .hero-btn */
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #e5c1ff; /* Light purple from your theme */
+        color: #e5c1ff;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .latest-post .read-more-btn:hover {
+        background-color: rgba(229, 193, 255, 0.1);
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
@@ -96,6 +138,7 @@
         </div>
       </div>
     </section>
+
     <section class="my-skills">
       <h1>My Skills</h1>
       <div class="container grid container--visible">
@@ -155,6 +198,21 @@
         </div>
       </div>
     </section>
+    <section class="latest-post">
+      <div class="container">
+        <h2>From the Blog</h2>
+        <div class="post-card">
+          <span class="post-date">October 8, 2025</span>
+          <h3>How Modern CSS Transformed My Workflow</h3>
+          <p>
+            A quick dive into how new features like container queries and the
+            :has() selector have completely changed the way I approach frontend
+            development...
+          </p>
+          <a href="/blog.html#your-post-id" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </section>
     <div class="mid-section-text">
       <div>
         <p>Just one click away from turning your ideas into reality</p>
@@ -196,6 +254,21 @@
   </body>
 </html>
 
+<!--
+  (latest one) steps:
+    - (current step) make the website production ready ->  it's almost finished -> add the finishing touches to both projects (you don't have more than two hours left in you to do that. Maybe it's an all night grind night this time. But you'll do it). and you'll relax to Japanese till you fall asleep!
+    - This will require multiple attempts to fully unify and homogenize
+    -> an exact timeline of your career and academic journey. This is the
+    most crucial part for getting the go ahead from the consulate to move to
+    Japan.
+    -> Once you've been able to come up with the best version (most authentic +
+    all gaps and inconsistencies are reasonably justified and addressed)
+    -> You'll add that shit to the about section of this website
+    -> but right now, you can just focus on developing the final bits of ATP and Joyful Speaking.
+    -> Once this is all done, you'll make a habit of keeping them all regularly updated. This is how
+    you'll keep your coding skills super sharp as you're mastering the Japanese way
+    - (final step after deploying the relaunch) CHECK POSTPRODUCTION FOLDER TO KNOW WHICH BLOGPOSTS TO INCLUDE AT RELAUNCH
+-->
 <!-- 
 Biggest madafkin BREAKTHROUGH for this project(current stesp):
 
@@ -225,26 +298,3 @@ DEADLINE: DEY 7
 
 -->
 
-<!-- General TODOs:
- 
-  - Planning to use HTMX on the third iteration of this website
-  - A shorter introudction section that precedes "My career in a short retrospect" (Just like Kevin Powell's Hero picture on responsive mode)
-  - Add a "privacy policy" or evidence on how formsubmit.co is super safe!
- - must serve all assets from an external server 
-  (If you're not willing to make use of the community, as small as it may seem, you'll never grow)(don't even need anything but their approval to pull this off)
- - The project section on the homepage could use a color transformation effect on hover!
- - Maybe my fullname on the hero banner is not a good idea since I'll mostly be dealing with international clients
- 
--->
-
-<!-- General TODOs:
- 
-  - Planning to use HTMX on the third iteration of this website
-  - A shorter introudction section that precedes "My career in a short retrospect" (Just like Kevin Powell's Hero picture on responsive mode)
-  - Add a "privacy policy" or evidence on how formsubmit.co is super safe!
- - must serve all assets from an external server 
-  (If you're not willing to make use of the community, as small as it may seem, you'll never grow)(don't even need anything but their approval to pull this off)
- - The project section on the homepage could use a color transformation effect on hover!
- - Maybe my fullname on the hero banner is not a good idea since I'll mostly be dealing with international clients
- 
--->

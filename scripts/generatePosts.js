@@ -1,5 +1,3 @@
-//current step: adjust this code for your project -> get the generator to work -> then add the required styles for the blog post page
-
 import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 import { marked } from 'marked';

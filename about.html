@@ -15,6 +15,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
     <script src="./scripts/scriptMain.js" defer></script>
     <title>AT Productions</title>
+    <link rel="stylesheet" href="/styles/about.css" />
   </head>
   <body>
     <div class="navbar">
@@ -58,45 +59,95 @@
               ideas intersect with computer science.
             </p>
 
-            <p>
-              This curiosity led me to create my own language teaching platform,
-              where I had my first hands-on experience building a website using
-              a content management system. After attending a brief C++ bootcamp
-              and experimenting with C#, I started helping clients get their
-              small-scale apps up and running in C#.
-            </p>
+            <div id="more-text-content" class="more-text">
+              <p>
+                This curiosity led me to create my own language teaching
+                platform, where I had my first hands-on experience building a
+                website using a content management system...
+              </p>
+              <p>
+                Stay tuned for the awesome apps I’m currently building and the
+                digital ventures I’m excited to share on my blog here!
+              </p>
+            </div>
 
-            <p>
-              A turning point came when a friend enlisted my help to create a
-              website for his startup using another CMS. That project made me
-              realize I had a knack for web development. Around the same time, I
-              joined a travel agency as a developer, where I wrote several
-              scripts in UiPath to automate their tasks.
-            </p>
-
-            <p>
-              My next adventure was teaching a six-month extracurricular course
-              on basic HTML, CSS, and JavaScript to high school students.
-              Watching them grow and gain confidence in coding was incredibly
-              fulfilling, and it confirmed that frontend web development is
-              where I truly belong.
-            </p>
-
-            <p>
-              Today, my primary focus is creating apps and websites for clients
-              through ATproductions. I also explore my passion for linguistics
-              and language education through Joyful Speaking, a platform I hold
-              close to my heart.
-            </p>
-
-            <p>
-              Stay tuned for the awesome apps I’m currently building and the
-              digital ventures I’m excited to share on my blog here!
-            </p>
+            <button id="read-more-btn" class="read-more-btn">
+              Read full story
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <section class="testimonials">
+      <div class="container">
+        <h2>What My Clients Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/30.jpg"
+                alt="Client photo"
+                class="testimonial-avatar"
+              />
+              <div>
+                <cite>
+                  Haruto Tanaka
+                  <span>CEO, TechForward Inc.</span>
+                </cite>
+              </div>
+            </div>
+            <blockquote>
+              Working with Amirali was a fantastic experience. He delivered a
+              high-quality product ahead of schedule and was incredibly
+              responsive to feedback throughout the process.
+            </blockquote>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/31.jpg"
+                alt="Client photo"
+                class="testimonial-avatar"
+              />
+              <div>
+                <cite>
+                  Yuki Yamada
+                  <span>Project Manager, Creative Solutions</span>
+                </cite>
+              </div>
+            </div>
+            <blockquote>
+              His attention to detail and mastery of frontend development is
+              unmatched. Our website's performance and user engagement have
+              visibly improved since the relaunch.
+            </blockquote>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Client photo"
+                class="testimonial-avatar"
+              />
+
+              <div>
+                <cite>
+                  Kenji Mori
+                  <span>Founder, PixelWave Studio</span>
+                </cite>
+              </div>
+            </div>
+            <blockquote>
+              Amirali combines sharp technical expertise with true creative
+              intuition. The collaboration was smooth, inspiring, and
+              results-driven from start to finish.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="flex">
       <div class="container flex container--visible">
         <span>Ingenuity, dedication & excellence</span>
@@ -130,5 +181,39 @@
         </div>
       </div>
     </footer>
+    <script>
+      /* read more integration */
+      document.addEventListener("DOMContentLoaded", () => {
+        const readMoreBtn = document.getElementById("read-more-btn")
+        const moreText = document.getElementById("more-text-content")
+
+        if (readMoreBtn && moreText) {
+          readMoreBtn.addEventListener("click", () => {
+            moreText.classList.toggle("expanded")
+
+            // Change the button text
+            if (moreText.classList.contains("expanded")) {
+              readMoreBtn.textContent = "Show less"
+            } else {
+              readMoreBtn.textContent = "Read full story"
+            }
+          })
+        }
+      })
+    </script>
   </body>
 </html>
+
+<!-- 
+steps:
+ - I'll finalize everything and launch this website on my official github domain (mastle.github.com - consult AI to see which domain name suits your shit)
+ - The only future update that'll be in order is upgrading the About section based on the ultimate story of my academic and software career that I come up with as the
+ response to the inquiry email that I get
+ - Do take care of image optimizations before deployment
+-->
+<!-- 
+TODO:
+  - Add a "privacy policy" or evidence on how formsubmit.co is super safe!
+  - an HTMX upgrade might be well worth considering for this project
+
+  -->
